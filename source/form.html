@@ -45,15 +45,15 @@
           <fieldset>
             <label class="form__parameters">
               <span class="form__parameters--item">ИМЯ:*</span>
-              <input type="text" value="Барсик" required>
+              <input type="text" name="cat-name" value="Барсик" required>
             </label>
             <label class="form__parameters">
               <span class="form__parameters--item">Вес (кг):*</span>
-              <input type="text" value="7" required>
+              <input type="text" name="cat-weight" value="7" required>
             </label>
             <label class="form__parameters">
               <span class="form__parameters--item">Возраст (лет):</span>
-              <input type="text" value="7" required>
+              <input type="text" name="cat-age" value="7" required>
             </label>
 
             <ul class="type-programs__list">
@@ -83,11 +83,11 @@
 
             <label class="form__contacts--owner">
               <span class="form__contacts--emeil">E-mail:*</span>
-              <input type="email" placeholder="kuklachev@gmail.com" required>
+              <input type="email" name="mail-owner" placeholder="kuklachev@gmail.com" required>
             </label>
             <label class="form__contacts--owner">
               <span class="form__contacts--tel">Телефон:*</span>
-              <input type="tel" placeholder="8 (960) 900-60-90" required>
+              <input type="tel" name="tel-owner" placeholder="8 (960) 900-60-90" required>
             </label>
           </fieldset>
 
@@ -95,7 +95,7 @@
             <h2 class="form__comment">Комментарий</h2>
 
             <label for="message" class="visually-hidden">Message</label>
-            <textarea cols="50" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea cols="50" rows="10" name="comment-owner" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset>
