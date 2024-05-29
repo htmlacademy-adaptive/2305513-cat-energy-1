@@ -42,37 +42,37 @@
           <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
 
-          <fieldset>
-            <label class="form__parameters">
-              <span class="form__parameters-item">ИМЯ:*</span>
+          <fieldset class="form__parameters">
+            <label class="form__parameters-item">
+              <span class="">ИМЯ:*</span>
               <input type="text" name="cat-name" value="Барсик" required>
             </label>
             <label class="form__parameters">
-              <span class="form__parameters--item">Вес (кг):*</span>
+              <span class="form__parameters-item">Вес (кг):*</span>
               <input type="text" name="cat-weight" value="7" required>
             </label>
             <label class="form__parameters">
-              <span class="form__parameters--item">Возраст (лет):</span>
+              <span class="form__parameters-item">Возраст (лет):</span>
               <input type="text" name="cat-age" value="7" required>
             </label>
 
-            <ul class="type-programs__list">
-              <li class="type-programs__item">
+            <ul class="form__programs-list">
+              <li class="form__programs-item">
                 <label class="radio">
                   <input class="" type="radio" name="programs-pet" value="Weight loss" checked>
-                  <span class="type-programs__item--title">Похудение</span>
+                  <span class="form__programs-item-title">Похудение</span>
                 </label>
               </li>
-              <li class="type-programs__item">
+              <li class="form__programs-item">
                 <label class="radio">
                   <input class="" type="radio" name="programs-pet" value="Weight gain">
-                  <span class="type-programs__item--title">Набор массы</span>
+                  <span class="form__programs-item-title">Набор массы</span>
                 </label>
               </li>
-              <li class="type-programs__item">
+              <li class="form__programs-item">
                 <label class="radio">
                   <input class="" type="radio" name="programs-pet" value="I need your advice">
-                  <span class="type-programs__item--title">Не знаю (Нужен ваш совет)</span>
+                  <span class="form__programs-item-title">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
@@ -81,20 +81,18 @@
           <fieldset>
             <h2 class="form__contacts">Контактные данные (владельца кота)</h2>
 
-            <label class="form__contacts--owner">
-              <span class="form__contacts--emeil">E-mail:*</span>
+            <label class="form__contacts-owner">
+              <span class="form__contacts-emeil">E-mail:*</span>
               <input type="email" name="mail-owner" placeholder="kuklachev@gmail.com" required>
             </label>
-            <label class="form__contacts--owner">
-              <span class="form__contacts--tel">Телефон:*</span>
+            <label class="form__contacts-owner">
+              <span class="form__contacts-tel">Телефон:*</span>
               <input type="tel" name="tel-owner" placeholder="8 (960) 900-60-90" required>
             </label>
           </fieldset>
 
           <fieldset>
-            <h2 class="form__comment">Комментарий</h2>
-
-            <label for="message" class="visually-hidden">Message</label>
+            <label for="message" class="form__comment">Комментарий</label>
             <textarea cols="50" rows="10" name="comment-owner"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
@@ -102,29 +100,29 @@
           <fieldset>
             <h2 class="form__additionally">Дополнительно</h2>
 
-            <ul class="form__additionally--list">
-              <li class="form__additionally--item">
-                <label class="form__additionally--label">
-                  <input class="form__additionally--input" type="checkbox" name="sweetener" checked>
-                  <span class="form__additionally--text">сахарозаменитель</span>
+            <ul class="form__additionally-list">
+              <li class="form__additionally-item">
+                <label class="form__additionally-label">
+                  <input class="form__additionally-input" type="checkbox" name="sweetener" checked>
+                  <span class="form__additionally-text">сахарозаменитель</span>
                 </label>
               </li>
-              <li class="form__additionally--item">
-                <label class="form__additionally--label">
-                  <input class="form__additionally--input" type="checkbox" name="water">
-                  <span class="form__additionally--text">питьевая вода</span>
+              <li class="form__additionally-item">
+                <label class="form__additionally-label">
+                  <input class="form__additionally-input" type="checkbox" name="water">
+                  <span class="form__additionally-text">питьевая вода</span>
                 </label>
               </li>
-              <li class="form__additionally--item">
-                <label class="form__additionally--label">
-                  <input class="form__additionally--input" type="checkbox" name="milk">
-                  <span class="form__additionally--text">молоко</span>
+              <li class="form__additionally-item">
+                <label class="form__additionally-label">
+                  <input class="form__additionally-input" type="checkbox" name="milk">
+                  <span class="form__additionally-text">молоко</span>
                 </label>
               </li>
-              <li class="form__additionally--item">
-                <label class="form__additionally--label">
-                  <input class="form__additionally--input" type="checkbox" name="vitamins">
-                  <span class="form__additionally--text">витамины</span>
+              <li class="form__additionally-item">
+                <label class="form__additionally-label">
+                  <input class="form__additionally-input" type="checkbox" name="vitamins">
+                  <span class="form__additionally-text">витамины</span>
                 </label>
               </li>
             </ul>
@@ -133,20 +131,20 @@
           <span>* — Обязательные поля</span>
         </form>
       </div>
+      <section class="cooperation">
+        <div class="cooperation__contacts">
+          <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <img src="" class="cooperation__map" alt="">
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__cooperation">
-        <div class="footer__cooperation-contacts">
-          <h3 class="footer__cooperation-title">приглашаем к сотрудничеству дилеров!</h3>
-          <p class="footer__cooperation-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <img src="" class="footer__cooperation-map" alt="">
-        </div>
-      </div>
       <div class="footer__social">
         <img src="" class="footer__social-logo" alt="Cat Energy">
         <ul class="footer__social-list">
-          <li class="footer__social-item footer__social-item-vk">
+          <li class="footer__social-item footer__social-item--vk">
             <a href="#" class="footer__social-item-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none">
                 <path
@@ -155,7 +153,7 @@
               </svg>
             </a>
           </li>
-          <li class="footer__social-item footer__social-item-yt">
+          <li class="footer__social-item footer__social-item--yt">
             <a href="#" class="footer__social-item-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none">
                 <path
@@ -164,7 +162,7 @@
               </svg>
             </a>
           </li>
-          <li class="footer__social-item footer__social-item-tg">
+          <li class="footer__social-item footer__social-item--tg">
             <a href="#" class="footer__social-item-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd"
