@@ -1,0 +1,358 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.button {
+  border: none;
+  background: #68b738;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.additional-products__title {
+  color: #000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.additional-products__cart-title {
+  color: #222222;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional-products__list {
+  list-style: none;
+}
+
+.bonus__text {
+  background: rgba(104, 183, 56, 0.85);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.case {
+  background: #eaeaea;
+}
+
+.case__title {
+  color: #000000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.case__description {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.case__module-title {
+  color: #000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.case__module-description {
+  color: #444444;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.case__module-result {
+  color: #000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__title {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list__item-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-list__item-line {
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-list__item-th {
+  color: #444444;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.catalog-list__item-td {
+  color: #444444;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.catalog-list__more-link {
+  background-color: #F2F2F2;
+}
+
+.checkbox-filed__title {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.cooperation__title {
+  color: #111111;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.cooperation__text {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.description__title {
+  color: #000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.description__list {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  list-style: none;
+}
+
+.description__item {
+  color: v #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.form__additionally {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.form__additionally-list {
+  list-style: none;
+}
+
+.form__comment {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.form__contacts-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.contacts-owner__title {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__programs-list {
+  list-style: none;
+}
+
+.hero {
+  background: rgba(104, 183, 56, 0.85);
+}
+
+.hero__intro {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #fff;
+}
+
+.hero__slogan {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  width: 280px;
+  height: 40px;
+  padding: 10px 44px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__list-item {
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.program__mass-loss {
+  background-color: #f2f2f2;
+}
+
+.program__weight-gain {
+  background-color: #f2f2f2;
+}
+
+.program__title {
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program__description {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.program__link {
+  color: #000000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text-field__title {
+  color: #444444;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.radio-filed__title {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+/*# sourceMappingURL=style.css.map */
