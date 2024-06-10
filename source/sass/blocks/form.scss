@@ -1,7 +1,9 @@
 .form {
   font-family: "Oswald", sans-serif;
-  color: #000;
+  color: #000000;
 }
+
+// form__application-form
 
 .form__application-form {
 }
@@ -20,5 +22,61 @@
 }
 
 .form__button {
+}
 
+// form__programs
+
+.form__programs {
+}
+
+.form__programs-list {
+  list-style: none;
+}
+
+.form__programs-item {
+}
+
+// form__contacts
+
+.form__contacts {
+}
+
+.form__contacts-title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.contacts-owner__title {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+// form__comment
+
+.form__comment {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+// form__additionally
+
+.form__additionally {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.form__additionally-list {
+  list-style: none;
+}
+
+.form__additionally-item {
 }
