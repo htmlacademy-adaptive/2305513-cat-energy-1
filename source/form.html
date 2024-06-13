@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -10,13 +11,14 @@
 <body class="page-body">
   <div class="container">
     <header class="main-header">
-      <picture>
-        <a href="#" class="main-header__logo">
-          <source srcset="./img/logo-pic.png" media="()">
-          <img src="./img/logo-pic.png" alt="Логотип с изображением мультяшной собаки в костюме бэтмена на желтом фоне">
-          <img src="./img/logo-text.svg" alt="Cat Energy">
-        </a>
-      </picture>
+      <a href="#" class="main-header__logo">
+        <picture>
+          <!-- <source srcset="./img/logo-mobile.svg" type="image/svg" media="(max-width: 767px)"> -->
+          <source srcset="./img/logo-tablet.svg" type="image/svg" media="(min-width: 768px max-width: 1199px)">
+          <!-- <source srcset="./img/logo-desktop.svg" type="image/svg" media="(min-width: 1200px)"> -->
+          <img src="./img/logo-mobile.svg" alt="Логотип Cat Energy">
+        </picture>
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle button" type="button">
           <span class="visually-hidden">Открыть меню</span>
