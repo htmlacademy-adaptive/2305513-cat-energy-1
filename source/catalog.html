@@ -10,8 +10,8 @@
 </head>
 
 <body class="page-body">
-  <div class="container">
-    <header class="main-header">
+  <header class="main-header">
+    <div class="wrapper">
       <a href="#" class="logo-img">
         <img src="./img/logo-pic.png" alt="Логотип с изображением мультяшной собаки в костюме бэтмена на желтом фоне">
       </a>
@@ -19,24 +19,28 @@
         <img src="./img/logo-text.svg" alt="Cat Energy">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="wrapper">
+          <button class="main-nav__toggle button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item ">
-            <a class="link" href="./index.html">Главная</a>
-          </li>
-          <li class="main-nav__list-item main-nav__list-item--current">
-            <a class="link">Каталог продукции</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="link" href="./form.html">Подбор программы</a>
-          </li>
-        </ul>
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item ">
+              <a class="link" href="./index.html">Главная</a>
+            </li>
+            <li class="main-nav__list-item main-nav__list-item--current">
+              <a class="link">Каталог продукции</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="link" href="./form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </header>
-    <main class="catalog">
+    </div>
+  </header>
+  <main class="catalog">
+    <div class="wrapper">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog-list">
         <li class="catalog-list__item">
@@ -237,15 +241,19 @@
         <span class="bonus__text">Закажите все и получите чехол для кота в подарок!</span>
       </div>
       <section class="cooperation">
-        <div class="cooperation__contacts">
-          <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
-          <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <img src="" class="cooperation__map" alt="">
+        <div class="wrapper">
+          <div class="cooperation__contacts">
+            <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
+            <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <img src="" class="cooperation__map" alt="">
+          </div>
         </div>
-      </section>
-    </main>
+    </div>
+    </section>
+  </main>
 
-    <footer class="footer">
+  <footer class="footer">
+    <div class="wrapper">
       <div class="footer__social">
         <div class="footer__social-logo">
           <img src="./img/logo-text.svg" class="footer__social-logo-img" alt="Cat Energy">
@@ -283,8 +291,8 @@
           <img src="" alt="">
         </a>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 
 </html>
