@@ -2,9 +2,34 @@
   background: rgba(104, 183, 56, 0.85);
 }
 
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .hero__intro {
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-Oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -13,7 +38,7 @@
 
 .hero__slogan {
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-Oswald;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;

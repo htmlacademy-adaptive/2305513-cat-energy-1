@@ -1,4 +1,26 @@
 .bonus {
+  display: flex;
+}
+
+.bonus__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .bonus__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bonus__wrapper {
+    width: 245px;
+    height: 288px;
+  }
 }
 
 .bonus__text {

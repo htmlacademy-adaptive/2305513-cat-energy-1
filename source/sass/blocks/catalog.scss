@@ -1,19 +1,93 @@
 .catalog {
 }
 
+.catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .catalog__title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-Oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
 }
 
 .catalog-list {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog-list {
+    width: 768px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-list {
+    width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px;
+  }
+}
+
 .catalog-list__item {
+  display: flex;
+  width: 280px;
+  height: 209px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-list__item {
+    display: flex;
+    width: 324px;
+    height: 511px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-list__item {
+    display: flex;
+    width: 245px;
+    height: 511px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .catalog-list__item-img-div {
@@ -23,7 +97,7 @@
 }
 
 .catalog-list__item-title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-Oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -60,5 +134,36 @@
 }
 
 .catalog-list__more-link {
-background-color: #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+.catalog-more {
+  display: flex;
+  width: 280px;
+  height: 209px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-more {
+    display: flex;
+    width: 324px;
+    height: 511px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-more {
+    display: flex;
+    width: 245px;
+    height: 511px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

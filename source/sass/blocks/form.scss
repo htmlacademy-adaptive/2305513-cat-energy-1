@@ -1,11 +1,31 @@
 .form {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-Oswald;
   color: #000000;
 }
 
 // form__application-form
 
 .form__application-form {
+}
+
+.form__hero-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__hero-wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__hero-wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .form__title {
@@ -27,6 +47,15 @@
 // form__programs
 
 .form__programs {
+}
+
+@media (min-width: $desktop-width) {
+  .form__programs--half-width {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }
 
 .form__programs-list {

@@ -2,6 +2,31 @@
   background: #eaeaea;
 }
 
+.case__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .case__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .case__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .case__title {
   color: #000000;
   text-align: center;

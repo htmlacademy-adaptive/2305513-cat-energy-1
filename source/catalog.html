@@ -11,7 +11,7 @@
 
 <body class="page-body">
   <header class="main-header">
-    <div class="wrapper">
+    <div class="main-header__wrapper">
       <a href="#" class="logo-img">
         <img src="./img/logo-pic.png" alt="Логотип с изображением мультяшной собаки в костюме бэтмена на желтом фоне">
       </a>
@@ -19,7 +19,7 @@
         <img src="./img/logo-text.svg" alt="Cat Energy">
       </a>
       <nav class="main-nav">
-        <div class="wrapper">
+        <div class="main-nav__wrapper">
           <button class="main-nav__toggle button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -40,7 +40,8 @@
     </div>
   </header>
   <main class="catalog">
-    <div class="wrapper">
+
+    <div class="catalog__wrapper">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog-list">
         <li class="catalog-list__item">
@@ -206,54 +207,68 @@
           <a class="catalog__more-link link">заказать</a>
         </li>
       </ul>
+    </div>
 
-      <div class="additional-products">
+    <div class="additional-products">
+      <div class="additional-products__wrapper">
         <h2 class="additional-products__title">Дополнительные товары</h2>
         <ul class="additional-products__list">
           <li class="additional-products__item">
             <span class="additional-products__cart-title">Сахарозаменитель</span>
-            <span>1 упаковка (100 г)</span>
-            <span>200 ₽</span>
+            <div class="additional-products__span">
+              <span>1 упаковка (100 г)</span>
+              <span>200 ₽</span>
+            </div>
             <a href="#" class="additional-products__link link button">заказать</a>
           </li>
           <li class="additional-products__item">
             <span class="additional-products__cart-title">Питьевая вода</span>
-            <span>5 литров</span>
-            <span>50 ₽</span>
+            <div class="additional-products__span">
+              <span>5 литров</span>
+              <span>50 ₽</span>
+            </div>
             <a href="#" class="additional-products__link link button">заказать</a>
           </li>
           <li class="additional-products__item">
             <span class="additional-products__cart-title">молоко</span>
-            <span>1 литр</span>
-            <span>100 ₽</span>
+            <div class="additional-products__span">
+              <span>1 литр</span>
+              <span>100 ₽</span>
+            </div>
             <a href="#" class="additional-products__link link button">заказать</a>
           </li>
           <li class="additional-products__item">
             <span class="additional-products__cart-title">витамины</span>
-            <span>1 упаковка (30 г)</span>
-            <span>300 ₽</span>
+            <div class="additional-products__span">
+              <span>1 упаковка (30 г)</span>
+              <span>300 ₽</span>
+            </div>
             <a href="#" class="additional-products__link link button">заказать</a>
           </li>
         </ul>
-      </div>
-      <div class="bonus">
-        <img src="" alt="">
-        <span class="bonus__text">Закажите все и получите чехол для кота в подарок!</span>
-      </div>
-      <section class="cooperation">
-        <div class="wrapper">
-          <div class="cooperation__contacts">
-            <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
-            <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-            <img src="" class="cooperation__map" alt="">
+
+        <div class="bonus">
+          <div class="bonus__wrapper">
+            <img src="" alt="">
+            <span class="bonus__text">Закажите все и получите чехол для кота в подарок!</span>
           </div>
         </div>
+      </div>
     </div>
+    <section class="cooperation">
+      <div class="cooperation__wrapper">
+        <div class="cooperation__contacts">
+          <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <img src="" class="cooperation__map" alt="">
+        </div>
+      </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrapper">
+    <div class="footer__wrapper">
       <div class="footer__social">
         <div class="footer__social-logo">
           <img src="./img/logo-text.svg" class="footer__social-logo-img" alt="Cat Energy">
