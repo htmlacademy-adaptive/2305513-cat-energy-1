@@ -12,11 +12,12 @@
 <body class="page-body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a href="#" class="logo-img">
-        <img src="./img/logo-pic.png" alt="Логотип с изображением мультяшной собаки в костюме бэтмена на желтом фоне">
-      </a>
-      <a href="" class="logo-text">
-        <img src="./img/logo-text.svg" alt="Cat Energy">
+      <a href="#" class="main-header__logo">
+        <picture>
+          <source srcset="./img/logo-desktop.svg" media="(min-width: 1200px)">
+          <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
+          <img src="./img/logo-mobile.svg" alt="Логотип Cat Energy">
+        </picture>
       </a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">

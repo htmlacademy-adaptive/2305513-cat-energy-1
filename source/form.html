@@ -13,12 +13,11 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a href="#" class="main-header__logo">
-        <!-- <picture>
-          <source srcset="./img/logo-mobile.svg" type="image/svg" media="(max-width: 767px)">
-          <source srcset="./img/logo-tablet.svg" type="image/svg" media="(min-width: 768px max-width: 1199px)">
-          <source srcset="./img/logo-desktop.svg" type="image/svg" media="(min-width: 1200px)">
+        <picture>
+          <source srcset="./img/logo-desktop.svg" media="(min-width: 1200px)">
+          <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
           <img src="./img/logo-mobile.svg" alt="Логотип Cat Energy">
-        </picture> -->
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle button" type="button">
@@ -42,13 +41,13 @@
 
   <main>
     <div class="form">
+
+      <div class="form__hero-wrapper">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
+
       <form class="form__application-form" action="https://echo.htmlacademy.ru/">
-        <div class="form__hero-wrapper">
-          <h1 class="form__title">Подбор программы</h1>
-          <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        </div>
-
-
         <fieldset class="form__programs form__programs--half-width">
           <div class="text-field">
             <label class="text-field__title">Имя:*</label>
@@ -67,12 +66,12 @@
         <fieldset class="form__programs form__programs--half-width">
           <ul class="form__programs-list">
             <li class="form__programs-item">
-              <div class="radio-filed">
-                <label class="radio-filed__label">
-                  <input class="" type="radio" name="programs-pet" value="Weight loss" checked>
-                  <span class="radio-filed__title">Похудение</span>
-                </label>
-              </div>
+
+              <label class="radio-filed">
+                <input class="" type="radio" name="programs-pet" value="Weight loss" checked>
+                <span class="radio-filed__title">Похудение</span>
+              </label>
+
             </li>
             <li class="form__programs-item">
               <div class="radio-filed">
@@ -97,7 +96,7 @@
           <h2 class="form__contacts-title">Контактные данные (владельца кота)</h2>
           <div class="text-filed">
             <label class="text-filed__title">E-mail:*</label>
-            <input class="text-filed__text text-filed__text-icon" type="email" name="mail-owner"
+            <input class="text-filed__text text-filed__text--icon" type="email" name="mail-owner"
               placeholder="kuklachev@gmail.com" required>
           </div>
           <div class="text-filed">
