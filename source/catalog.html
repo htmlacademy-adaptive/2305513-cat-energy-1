@@ -3,39 +3,46 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 </head>
 
 <body class="page-body">
-  <div class="container">
-    <header class="main-header">
-      <a href="#" class="logo-img">
-        <img src="./img/logo-pic.png" alt="Логотип с изображением мультяшной собаки в костюме бэтмена на желтом фоне">
-      </a>
-      <a href="" class="logo-text">
-        <img src="./img/logo-text.svg" alt="Cat Energy">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a href="#" class="main-header__logo">
+        <picture>
+          <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)">
+          <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
+          <img src="./img/logo-mobile.svg" alt="Логотип Cat Energy">
+        </picture>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item ">
-            <a class="link" href="./index.html">Главная</a>
-          </li>
-          <li class="main-nav__list-item main-nav__list-item--current">
-            <a class="link">Каталог продукции</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="link" href="./form.html">Подбор программы</a>
-          </li>
-        </ul>
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item ">
+              <a class="link" href="./index.html">Главная</a>
+            </li>
+            <li class="main-nav__list-item main-nav__list-item--current">
+              <a class="link">Каталог продукции</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="link" href="./form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </header>
-    <main class="catalog">
+    </div>
+  </header>
+  <main class="catalog">
+
+    <div class="catalog__wrapper">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog-list">
         <li class="catalog-list__item">
@@ -192,61 +199,81 @@
           <a class="catalog-list__item-link link button">заказать</a>
         </li>
 
-        <li class="catalog-list__more">
-          <div class="catalog-list__more-img-div">
-            <img src="" class="catalog-list__more-img" alt="">
+        <li class="catalog-more">
+          <div class="catalog-more__img-div">
+            <img src="" class="catalog-more__img" alt="">
           </div>
-          <h3 class="catalog-list__more-title">Показать еще 100500 товаров</h3>
+          <h3 class="catalog__more-title">Показать еще 100500 товаров</h3>
           <p>На самом деле вкусов гораздо больше!</p>
-          <a class="catalog-list__more-link link">заказать</a>
+          <a class="catalog__more-link link">заказать</a>
         </li>
       </ul>
+    </div>
 
-      <div class="additional-products">
+    <div class="additional-products">
+      <div class="additional-products__wrapper">
         <h2 class="additional-products__title">Дополнительные товары</h2>
         <ul class="additional-products__list">
           <li class="additional-products__item">
             <span class="additional-products__cart-title">Сахарозаменитель</span>
-            <span>1 упаковка (100 г)</span>
-            <span>200 ₽</span>
+            <div class="additional-products__span">
+              <span>1 упаковка (100 г)</span>
+              <span>200 ₽</span>
+            </div>
             <a href="#" class="additional-products__link link button">заказать</a>
           </li>
           <li class="additional-products__item">
             <span class="additional-products__cart-title">Питьевая вода</span>
-            <span>5 литров</span>
-            <span>50 ₽</span>
+            <div class="additional-products__span">
+              <span>5 литров</span>
+              <span>50 ₽</span>
+            </div>
             <a href="#" class="additional-products__link link button">заказать</a>
           </li>
           <li class="additional-products__item">
             <span class="additional-products__cart-title">молоко</span>
-            <span>1 литр</span>
-            <span>100 ₽</span>
+            <div class="additional-products__span">
+              <span>1 литр</span>
+              <span>100 ₽</span>
+            </div>
             <a href="#" class="additional-products__link link button">заказать</a>
           </li>
           <li class="additional-products__item">
             <span class="additional-products__cart-title">витамины</span>
-            <span>1 упаковка (30 г)</span>
-            <span>300 ₽</span>
+            <div class="additional-products__span">
+              <span>1 упаковка (30 г)</span>
+              <span>300 ₽</span>
+            </div>
             <a href="#" class="additional-products__link link button">заказать</a>
           </li>
         </ul>
+
+        <div class="bonus">
+          <div class="bonus__wrapper">
+            <img src="" alt="">
+            <span class="bonus__text">Закажите все и получите чехол для кота в подарок!</span>
+          </div>
+        </div>
       </div>
-      <div class="bonus">
-        <img src="" alt="">
-        <span class="bonus__text">Закажите все и получите чехол для кота в подарок!</span>
-      </div>
-      <section class="cooperation">
+    </div>
+    <section class="cooperation">
+      <div class="cooperation__wrapper">
         <div class="cooperation__contacts">
           <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
           <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           <img src="" class="cooperation__map" alt="">
         </div>
-      </section>
-    </main>
+      </div>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer">
+  <footer class="footer">
+    <div class="footer__wrapper">
       <div class="footer__social">
-        <img src="./img/logo-text.svg" class="footer__social-logo" alt="Cat Energy">
+        <div class="footer__social-logo">
+          <img src="./img/logo-text.svg" class="footer__social-logo-img" alt="Cat Energy">
+        </div>
         <ul class="footer__social-list">
           <li class="footer__social-item footer__social-item--vk">
             <a href="#" class="footer__social-item-link">
@@ -276,12 +303,12 @@
             </a>
           </li>
         </ul>
-        <div class="footer__social-autor">
+        <a class="footer__social-autor">
           <img src="" alt="">
-        </div>
+        </a>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 
 </html>

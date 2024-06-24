@@ -1,3 +1,10 @@
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }
+
+
 // добавляет миксины
 @import "./mixins.scss";
 @import "./variables.scss";
@@ -20,12 +27,9 @@
 @import "./blocks/container.scss";
 @import "./blocks/cooperation.scss";
 @import "./blocks/description.scss";
-@import "./blocks/form__additionally.scss";
-@import "./blocks/form__comment.scss";
-@import "./blocks/form__contacts.scss";
-@import "./blocks/form__programs.scss";
+@import "./blocks/form.scss";
 @import "./blocks/hero.scss";
-@import "./blocks/main-container.scss";
+@import "./blocks/main.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/page-body.scss";
@@ -33,3 +37,4 @@
 @import "./blocks/text-field.scss";
 @import "./blocks/radio-filed.scss";
 @import "./blocks/link.scss";
+@import "./blocks/footer.scss";

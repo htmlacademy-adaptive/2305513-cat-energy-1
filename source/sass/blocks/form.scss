@@ -1,9 +1,45 @@
 .form {
-  font-family: "Oswald", sans-serif;
-  color: #000;
+  font-family: $font-Oswald;
+  color: #000000;
 }
 
+// form__application-form
+
 .form__application-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .form__application-form {
+    flex-direction: row;
+  }
+}
+
+.form__application-form > * {
+  width: 100%;
+}
+
+.form__hero-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__hero-wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__hero-wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .form__title {
@@ -19,6 +55,98 @@
   text-transform: uppercase;
 }
 
-.form__button {
+// form__fieldset
 
+.fieldset-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-wrapper {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+.form__fieldset {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset {
+    display: flex;
+    width: 768px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset--half-width {
+    display: flex;
+    width: 50%;
+  }
+}
+
+.fieldset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-list--half-width {
+    display: flex;
+    width: 50%;
+  }
+}
+
+.fieldset-item {
+}
+
+// form__button
+
+.form__button {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form__button {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__button {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

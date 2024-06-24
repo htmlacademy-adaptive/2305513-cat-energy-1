@@ -1,0 +1,30 @@
+.main-header {
+}
+
+.main-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.main-header__logo {
+}

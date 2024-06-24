@@ -1,6 +1,31 @@
 .cooperation {
 }
 
+.cooperation__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .cooperation__contacts {
 }
 
