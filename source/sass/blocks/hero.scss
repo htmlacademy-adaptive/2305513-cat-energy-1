@@ -1,5 +1,5 @@
 .hero {
-  background: rgba(104, 183, 56, 0.85);
+
 }
 
 .hero__wrapper {
@@ -25,6 +25,11 @@
     width: 1220px;
     margin: 0 auto;
   }
+}
+
+.hero__background {
+  background: rgba(104, 183, 56, 0.85);
+  background-image: url("./img/background-mobile.png");
 }
 
 .hero__intro {

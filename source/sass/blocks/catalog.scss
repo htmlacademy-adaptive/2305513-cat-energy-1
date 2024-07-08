@@ -11,14 +11,12 @@
 @media (min-width: $tablet-width) {
   .catalog__wrapper {
     width: 768px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__wrapper {
     width: 1220px;
-    margin: 0 auto;
   }
 }
 
@@ -44,7 +42,7 @@
     width: 768px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 60px;
   }
 }
@@ -54,7 +52,7 @@
     width: 1220px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 60px;
   }
 }

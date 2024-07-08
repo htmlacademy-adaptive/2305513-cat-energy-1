@@ -19,9 +19,9 @@
           <img src="./img/logo-mobile.svg" alt="Логотип Cat Energy">
         </picture>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
-          <button class="main-nav__toggle button" type="button">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
@@ -44,9 +44,11 @@
   <main class="main">
     <section class="hero">
       <div class="hero__wrapper">
-        <h1 class="hero__intro">Функциональное питание для котов</h1>
-        <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <img src="" class="hero__img" alt="Коробка с кормом Cat Energy">
+        <div class="hero__background">
+          <h1 class="hero__intro">Функциональное питание для котов</h1>
+          <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        </div>
+        <img src="./img/hero-img-mobile.png" class="hero__img" alt="Коробка с кормом Cat Energy">
         <button class="hero__button button" type="button">Подобрать программу</button>
       </div>
     </section>
@@ -176,6 +178,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
