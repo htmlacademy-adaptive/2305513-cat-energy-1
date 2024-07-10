@@ -1,11 +1,11 @@
 .hero {
-
+  margin-bottom: 20px;
 }
 
 .hero__wrapper {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -28,8 +28,10 @@
 }
 
 .hero__background {
-  background: rgba(104, 183, 56, 0.85);
-  background-image: url("./img/background-mobile.png");
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../img/background-mobile.png");
+  width: 320px;
+  height: 302px;
 }
 
 .hero__intro {
@@ -39,6 +41,7 @@
   font-weight: 400;
   line-height: 36px;
   color: #ffffff;
+  margin-top: 27px;
 }
 
 .hero__slogan {
@@ -48,9 +51,13 @@
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .hero__img {
+  z-index: 2;
+  margin-top: -136px;
 }
 
 .hero__button {
@@ -59,4 +66,5 @@
   padding: 10px 44px;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
