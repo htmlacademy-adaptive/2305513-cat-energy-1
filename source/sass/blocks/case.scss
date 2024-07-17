@@ -44,6 +44,13 @@
 }
 
 .case__module {
+  display: flex;
+}
+
+.case__module-border {
+  width: 124px;
+  height: 56px;
+  border: 1px #cdcdcd solid;
 }
 
 .case__module-title {

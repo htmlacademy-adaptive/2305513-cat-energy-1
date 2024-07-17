@@ -99,6 +99,19 @@
   list-style: none;
 }
 
+@media (min-width: $desktop-width) {
+  .main-nav__list::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/background-desktop.png");
+    width: 720px;
+    height: 694px;
+    top: -13px;
+    right: 0;
+    z-index: -1;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .main-nav__list {
     background-color: #ffffff;
@@ -127,6 +140,7 @@
     display: inline-flex;
     align-items: center;
     gap: 33px;
+    margin-right: 110px;
   }
 }
 
