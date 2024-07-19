@@ -100,7 +100,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__list::before {
+  .main-nav__list--background::before {
     content: "";
     position: absolute;
     background-image: url("../img/background-desktop.png");

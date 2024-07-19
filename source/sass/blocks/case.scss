@@ -1,5 +1,6 @@
 .case {
   background: #eaeaea;
+  font-family: $font-Oswald;
 }
 
 .case__wrapper {
@@ -11,26 +12,19 @@
 
 @media (min-width: $tablet-width) {
   .case__wrapper {
-    display: flex;
-    flex-direction: column;
     width: 768px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .case__wrapper {
-    display: flex;
-    flex-direction: column;
     width: 1220px;
-    margin: 0 auto;
   }
 }
 
 .case__title {
   color: #000000;
   text-align: center;
-  font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -44,19 +38,27 @@
 }
 
 .case__module {
-  display: flex;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .case__module-border {
   width: 124px;
   height: 56px;
   border: 1px #cdcdcd solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 
 .case__module-title {
   color: #000000;
   text-align: center;
-  font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -67,15 +69,24 @@
   text-align: center;
   font-size: 12px;
   font-weight: 400;
-  line-height: 100%;
+  line-height: 12px;
+  background-color: #eaeaea;
+  padding: 0 10px;
+}
+
+.case__module-description--bottom {
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .case__module-result {
   color: #000000;
   text-align: center;
-  font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
