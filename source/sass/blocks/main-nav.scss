@@ -9,13 +9,13 @@
   display: block;
   width: 24px;
   height: 24px;
-  background-color: #ffffff;
+  background-color: $basic_white;
   cursor: pointer;
   border: none;
 
   &:hover,
   &:active {
-    background-color: #ffffff;
+    background-color: $basic_white;
   }
 }
 
@@ -48,7 +48,7 @@
     left: 0;
     width: 25px;
     height: 2px;
-    background-color: #000000;
+    background-color: $basic_black;
   }
 
   &::before {
@@ -114,7 +114,7 @@
 
 @media (max-width: $mobile-width-only) {
   .main-nav__list {
-    background-color: #ffffff;
+    background-color: $basic_white;
     width: 322px;
     position: absolute;
     left: -21px;
@@ -147,7 +147,7 @@
 .main-nav__list-item {
   display: flex;
   justify-content: center;
-  color: #000000;
+  color: $basic_black;
   font-family: $font-Oswald;
   width: 100%;
   font-size: 18px;
@@ -163,5 +163,11 @@
   .main-nav__list-item {
     border: none;
     display: contents;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__link {
+    color: $basic_white;
   }
 }

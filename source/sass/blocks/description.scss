@@ -1,5 +1,4 @@
-.description {
-}
+.description {}
 
 .description__wrapper {
   display: flex;
@@ -27,12 +26,18 @@
 }
 
 .description__title {
-  color: #000000;
+  color: $basic_black;
   text-align: center;
   font-family: $font-Oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .description__title {
+    text-align: start;
+  }
 }
 
 .description__list {
@@ -62,7 +67,7 @@
 }
 
 .description__item {
-  color: #444444;
+  color: $special_dark-grey;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -105,7 +110,7 @@
   font-size: 280px;
   font-weight: 400;
   line-height: 280px;
-  color: #f2f2f2;
+  color: $basic_grey;
 }
 
 @media (max-width: $mobile-width-only) {
