@@ -99,19 +99,6 @@
   list-style: none;
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav__list--background::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/background-desktop.png");
-    width: 720px;
-    height: 694px;
-    top: -13px;
-    right: 0;
-    z-index: -1;
-  }
-}
-
 @media (max-width: $mobile-width-only) {
   .main-nav__list {
     background-color: $basic_white;
@@ -140,7 +127,6 @@
     display: inline-flex;
     align-items: center;
     gap: 33px;
-    margin-right: 110px;
   }
 }
 
@@ -167,7 +153,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__list-item {
+    font-size: 20px;
+  }
+}
+
+.main-nav__link {
+  color: currentColor;
+  text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
   .main-nav__link {
     color: $basic_white;
+    text-decoration: none;
   }
 }

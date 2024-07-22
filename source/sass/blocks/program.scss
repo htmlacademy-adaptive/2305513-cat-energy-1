@@ -26,6 +26,7 @@
     width: 1220px;
     gap: 80px;
     margin: 0 auto;
+    margin-top: 266px;
   }
 }
 
@@ -146,6 +147,13 @@
   align-content: center;
 }
 
+@media (min-width: $tablet-width) {
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 .program__description {
   color: #444444;
   font-size: 14px;
@@ -159,6 +167,8 @@
 @media (min-width: $tablet-width) {
   .program__description {
     border: none;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 

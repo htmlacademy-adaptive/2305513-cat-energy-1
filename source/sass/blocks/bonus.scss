@@ -1,5 +1,6 @@
 .bonus {
   display: flex;
+  align-items: center;
 }
 
 .bonus__wrapper {
@@ -7,17 +8,13 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .bonus__wrapper {
+  @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .bonus__wrapper {
+  @media (min-width: $desktop-width) {
     width: 245px;
     height: 288px;
   }
@@ -32,22 +29,17 @@
 .bonus__icon {
   position: absolute;
   margin: 58px 101px 0 101px;
-}
 
-@media (min-width: $tablet-width) {
-  .bonus__icon {
+  @media (min-width: $tablet-width) {
     margin: 57px 0 60px 77px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .bonus__icon {
+  @media (min-width: $desktop-width) {
     margin: 56px 82px 149px 83px;
   }
 }
 
 .bonus__text {
-  // background-color: rgba(104, 183, 56, 0.85);
   color: $basic_white;
   text-align: center;
   font-size: 16px;
@@ -56,16 +48,12 @@
   width: 161px;
   position: absolute;
   margin: 186px 61px 43px 58px;
-}
 
-@media (min-width: $tablet-width) {
-  .bonus__text {
+  @media (min-width: $tablet-width) {
     margin: 71px 125px 69px 421px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .bonus__text {
+  @media (min-width: $desktop-width) {
     margin: 185px 42px 43px 42px;
   }
 }

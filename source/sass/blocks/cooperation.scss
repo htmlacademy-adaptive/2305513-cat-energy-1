@@ -4,21 +4,18 @@
 .cooperation__wrapper {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 320px;
+  padding: 0 20px;
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .cooperation__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     width: 768px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .cooperation__wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     width: 1220px;
@@ -27,22 +24,37 @@
 }
 
 .cooperation__contacts {
+  display: flex;
+  padding: 26px 20px;
 }
 
 .cooperation__title {
   color: #111111;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-Oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .cooperation__text {
-  color: #444444;
+  color: $special_dark-grey;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .cooperation__map {

@@ -1,23 +1,20 @@
-.description {}
+.description {
+}
 
 .description__wrapper {
   display: flex;
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .description__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     width: 768px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .description__wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     width: 1220px;
@@ -32,10 +29,8 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-}
 
-@media (min-width: $tablet-width) {
-  .description__title {
+  @media (min-width: $tablet-width) {
     text-align: start;
   }
 }
@@ -49,17 +44,14 @@
   font-weight: 400;
   line-height: 18px;
   list-style: none;
-}
+  margin-bottom: 29px;
 
-@media (min-width: $tablet-width) {
-  .description__list {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .description__list {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -71,19 +63,15 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-}
 
-@media (max-width: $mobile-width-only) {
-  .description__item {
+  @media (max-width: $mobile-width-only) {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
     gap: 20px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .description__item {
+  @media (min-width: $tablet-width) {
     display: flex;
     width: 245px;
     height: 280px;
@@ -93,14 +81,28 @@
   }
 }
 
-.description__text {
-  margin: 0;
-  padding: 0;
+@media (max-width: $mobile-width-only) {
+  .description__item img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .description__text {
+.description__item img {
+  width: 80px;
+  height: 80px;
+}
+
+.description__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-Lato;
+
+  @media (min-width: $tablet-width) {
     margin-top: 31px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -111,16 +113,12 @@
   font-weight: 400;
   line-height: 280px;
   color: $basic_grey;
-}
 
-@media (max-width: $mobile-width-only) {
-  .description__text-bg {
+  @media (max-width: $mobile-width-only) {
     display: none;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .description__text-bg {
+  @media (min-width: $tablet-width) {
     display: inline;
     position: absolute;
     right: 0;

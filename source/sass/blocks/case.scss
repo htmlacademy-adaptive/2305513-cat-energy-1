@@ -8,16 +8,12 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .case__wrapper {
+  @media (min-width: $tablet-width) {
     width: 768px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .case__wrapper {
+  @media (min-width: $desktop-width) {
     width: 1220px;
   }
 }
@@ -35,6 +31,12 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  font-family: $font-Lato;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .case__module {
