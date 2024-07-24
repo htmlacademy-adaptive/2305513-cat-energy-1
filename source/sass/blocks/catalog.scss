@@ -213,6 +213,7 @@ tbody {
   align-items: center;
   flex-direction: column;
   position: relative;
+  padding: 25px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -220,7 +221,7 @@ tbody {
     flex-direction: column;
     align-items: center;
     border: solid 2px #f2f2f2;
-    padding: 161px 36px 40px;
+    padding: 148px 36px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -229,6 +230,7 @@ tbody {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 119px 36px 40px;
   }
 }
 
@@ -236,8 +238,8 @@ tbody {
   content: "";
   display: inline-block;
   background-image: url("../img/plus.svg");
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 53px;
   left: 50%;
@@ -245,6 +247,35 @@ tbody {
   transform: translateX(-50%);
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.catalog__more-title {
+  margin: 0 0 8px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 23px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 26px 0;
+  }
+}
+
+.catalog__more-description {
+  margin: 0 0 21px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 82px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 90px 0;
+  }
 }
 
 .catalog__more-link {
