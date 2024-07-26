@@ -10,10 +10,8 @@
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
-}
 
-@media (min-width: $desktop-width) {
-  .form__application-form {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
   }
 }
@@ -26,17 +24,13 @@
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .form__hero-wrapper {
+  @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form__hero-wrapper {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
   }
@@ -47,10 +41,8 @@
   font-weight: 400;
   line-height: 36px;
   margin: 27px 0 37px 0;
-}
 
-@media (min-width: $tablet-width) {
-  .form__title {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -62,10 +54,8 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 39px;
-}
 
-@media (min-width: $tablet-width) {
-  .form__description {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -77,18 +67,14 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .fieldset-wrapper {
+  @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0 auto;
     padding: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .fieldset-wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
     width: 1220px;
     margin: 0 auto;
@@ -100,32 +86,31 @@
   display: flex;
   margin: 0 auto;
   padding: 0 20px;
+  padding-left: 20px;
   border: none;
   width: 320px;
   flex-direction: column;
   border-bottom: solid 1px #d9d9d9;
   padding-bottom: 24px;
-}
+  position: relative;
 
-@media (min-width: $tablet-width) {
-  .form__fieldset {
+  @media (min-width: $tablet-width) {
     display: flex;
     width: 768px;
     flex-direction: column;
-    margin: 0 auto;
+    padding-left: 70px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form__fieldset {
+  @media (min-width: $desktop-width) {
     display: flex;
     width: 1220px;
     margin: 0 auto;
+    padding-left: 110px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form__fieldset--half-width {
+.form__fieldset--half-width {
+  @media (min-width: $desktop-width) {
     display: flex;
     width: 50%;
   }
@@ -135,14 +120,45 @@
   font-family: $font-Oswald;
   font-size: 24px;
   line-height: 26px;
-  margin: 26px 0 35px 0;
-  width: 207px;
-  padding: 0;
+  margin: 26px 0 35px -20px;
+  background-color: $basic_white;
+  padding: 0 20px;
+  width: min-content;
+  white-space: nowrap;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 42px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $basic_green;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 40px;
+    }
+  }
 }
 
 .form__fieldset-textarea {
-  width: 280px;
+  width: 100%;
   height: 150px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: $font-Oswald;
+
+  @media (min-width: $tablet-width) {
+    height: 175px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .fieldset-list {
@@ -154,8 +170,8 @@
   gap: 14px;
 }
 
-@media (min-width: $desktop-width) {
-  .fieldset-list--half-width {
+.fieldset-list--half-width {
+  @media (min-width: $desktop-width) {
     display: flex;
     width: 50%;
   }
@@ -177,10 +193,12 @@
 
 .text-field {
   display: flex;
+  align-items: center;
 }
 
 .text-field input {
   width: 100%;
+  font-family: $font-Oswald;
 }
 
 .text-field__title {
@@ -199,17 +217,13 @@
   flex-direction: column;
   align-items: center;
   margin: 0 20px 32px 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .form__button {
+  @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form__button {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
   }
