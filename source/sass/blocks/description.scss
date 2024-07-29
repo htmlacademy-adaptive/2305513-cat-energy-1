@@ -77,20 +77,18 @@
     height: 280px;
     position: relative;
     flex-wrap: wrap;
-    align-content: center;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .description__item img {
-    width: 80px;
-    height: 80px;
   }
 }
 
 .description__item img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+  }
 }
 
 .description__text {

@@ -196,6 +196,15 @@ tbody {
   line-height: 20px;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 250px;
     margin-top: 32px;
@@ -289,6 +298,15 @@ tbody {
   line-height: 20px;
   text-transform: uppercase;
   background-color: $basic_grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     width: 250px;
