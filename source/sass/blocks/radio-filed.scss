@@ -1,4 +1,8 @@
 .radio-field {
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .radio-field__button {
@@ -13,6 +17,7 @@
   line-height: 18px;
   text-transform: uppercase;
   align-items: center;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

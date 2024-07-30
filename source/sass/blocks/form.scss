@@ -136,6 +136,7 @@
   border: none;
   padding: 9px 20px;
   outline: 1px solid #e7e7e7;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     height: 175px;
@@ -214,7 +215,12 @@
   }
 }
 
-.fieldset-item {
+.fieldset-label {
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .fieldset-title {
@@ -290,11 +296,22 @@
   text-transform: uppercase;
   margin: 0 0 21px 0;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 284px;
     height: 54px;
     padding: 14px 45px;
     margin: 0 60px 0 0;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -302,7 +319,4 @@
     height: 54px;
     padding: 14px 188px;
   }
-}
-
-.form__button-info {
 }

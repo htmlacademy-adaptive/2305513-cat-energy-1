@@ -32,6 +32,17 @@
   }
 }
 
+.footer__social-logo svg{
+
+  &:hover {
+    color: #3E3E3E;
+  }
+
+  &:active {
+    color: #6B6B6B;
+  }
+}
+
 .footer__social-list {
   list-style: none;
   display: flex;
@@ -42,6 +53,14 @@
 
 .footer__social-item svg {
   color: #666666;
+
+  &:hover {
+    color: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__social-logo {
@@ -59,6 +78,14 @@
   @media (min-width: $tablet-width) {
     gap: 23px;
   }
+
+  &:hover {
+    color: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__autor-htmlacademy {
@@ -70,4 +97,12 @@
 
 .footer__social-autor svg {
   color: #666666;
+
+  &:hover {
+    color: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
