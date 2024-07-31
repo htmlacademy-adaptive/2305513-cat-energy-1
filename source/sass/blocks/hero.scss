@@ -3,26 +3,14 @@
 }
 
 .hero__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  margin: 0 auto;
-}
+  @include wrapper;
 
-@media (min-width: $tablet-width) {
-  .hero__wrapper {
-    display: flex;
-    flex-direction: column;
+  @media (min-width: $tablet-width) {
     width: 768px;
-    margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .hero__wrapper {
-    display: flex;
+  @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: 0 auto;
     position: relative;
     margin-top: 110px;
   }
@@ -96,18 +84,13 @@
 .hero__img {
   z-index: 2;
   margin-top: -136px;
-}
 
-@media (min-width: $tablet-width) {
-  .hero__img {
-    z-index: 2;
+  @media (min-width: $tablet-width) {
     margin-top: -81px;
     margin-left: 20px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .hero__img {
+  @media (min-width: $desktop-width) {
     position: absolute;
     left: 430px;
     top: 0;

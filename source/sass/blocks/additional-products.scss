@@ -1,8 +1,5 @@
 .additional__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  margin: 0 auto;
+  @include wrapper;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -12,16 +9,11 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    display: flex;
-    flex-direction: column;
     padding-left: 70px;
   }
 }
 
 .additional-products__wrapper {
-  @media (min-width: $tablet-width) {
-  }
-
   @media (min-width: $desktop-width) {
     display: flex;
   }
@@ -31,8 +23,6 @@
   color: $basic_black;
   font-family: $font-Oswald;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   width: min-content;
   white-space: nowrap;
@@ -52,7 +42,13 @@
 
     @media (min-width: $desktop-width) {
       padding: 0 40px;
+      top: 51px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -154,8 +150,6 @@
   text-align: center;
   font-family: Oswald;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
 
   &:hover {

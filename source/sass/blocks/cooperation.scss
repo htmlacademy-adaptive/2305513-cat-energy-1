@@ -2,10 +2,7 @@
 }
 
 .cooperation__wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 320px;
+  @include wrapper;
 
   @media (min-width: $tablet-width) {
     display: flex;

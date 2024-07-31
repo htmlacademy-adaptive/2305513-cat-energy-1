@@ -2,8 +2,7 @@
 }
 
 .footer__wrapper {
-  width: 320px;
-  margin: 0 auto;
+  @include wrapper;
 
   @media (min-width: $tablet-width) {
     width: 768px;

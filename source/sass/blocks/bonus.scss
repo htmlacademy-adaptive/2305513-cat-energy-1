@@ -4,14 +4,10 @@
 }
 
 .bonus__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  margin: 0 auto;
+  @include wrapper;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +24,7 @@
 
 .bonus__icon {
   position: absolute;
-  margin: 58px 101px 0 101px;
+  margin: 58px 101px 0 121px;
 
   @media (min-width: $tablet-width) {
     margin: 57px 0 60px 77px;
@@ -47,7 +43,7 @@
   line-height: 20px;
   width: 161px;
   position: absolute;
-  margin: 186px 61px 43px 58px;
+  margin: 186px 61px 43px 78px;
 
   @media (min-width: $tablet-width) {
     margin: 71px 125px 69px 421px;
