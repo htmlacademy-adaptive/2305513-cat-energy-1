@@ -2,23 +2,16 @@
 }
 
 .description__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-  margin: 0 auto;
-}
+  @include wrapper;
 
-@media (min-width: $tablet-width) {
-  .description__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     width: 768px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .description__wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     width: 1220px;
@@ -27,32 +20,35 @@
 }
 
 .description__title {
-  color: #000000;
+  color: $basic_black;
   text-align: center;
   font-family: $font-Oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
 }
 
 .description__list {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   list-style: none;
-}
+  margin-bottom: 29px;
 
-@media (min-width: $tablet-width) {
-  .description__list {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .description__list {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -60,15 +56,67 @@
 }
 
 .description__item {
-  color: #444444;
+  color: $special_dark-grey;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-}
 
-@media (min-width: $tablet-width) {
-  .description__item {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
     width: 245px;
     height: 280px;
+    position: relative;
+    flex-wrap: wrap;
+  }
+}
+
+.description__item img {
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+  }
+}
+
+.description__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-Lato;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 31px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.description__text-bg {
+  text-align: center;
+  font-family: $font-Oswald;
+  font-size: 280px;
+  font-weight: 400;
+  line-height: 280px;
+  color: $basic_grey;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    position: absolute;
+    right: 0;
+    z-index: -2;
   }
 }

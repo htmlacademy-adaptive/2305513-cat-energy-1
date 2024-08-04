@@ -10,10 +10,8 @@
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
-}
 
-@media (min-width: $desktop-width) {
-  .form__application-form {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
   }
 }
@@ -23,20 +21,15 @@
 }
 
 .form__hero-wrapper {
-  width: 320px;
-  margin: 0 auto;
+  @include wrapper;
   padding: 0 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .form__hero-wrapper {
+  @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form__hero-wrapper {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
   }
@@ -46,6 +39,12 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+  margin: 27px 0 37px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form__description {
@@ -53,26 +52,113 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 // form__fieldset
 
+.form__fieldset {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-left: 20px;
+  border: none;
+  width: 320px;
+  flex-direction: column;
+  border-bottom: solid 1px #d9d9d9;
+  padding-bottom: 24px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 768px;
+    flex-direction: column;
+    padding-left: 70px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 110px;
+    border: none;
+  }
+}
+
+.form__fieldset--half-width {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 50%;
+  }
+}
+
+.form__fieldset-title {
+  font-family: $font-Oswald;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 26px 0 35px -20px;
+  background-color: $basic_white;
+  padding: 0 20px;
+  width: min-content;
+  white-space: nowrap;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 42px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $basic_green;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 40px;
+    }
+  }
+}
+
+.form__fieldset-textarea {
+  width: 100%;
+  height: 150px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: $font-Oswald;
+  border: none;
+  padding: 9px 20px;
+  outline: 1px solid #e7e7e7;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    height: 175px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
 .fieldset-wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
-}
+  padding: 0;
 
-@media (min-width: $tablet-width) {
-  .fieldset-wrapper {
+  @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0 auto;
     padding: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .fieldset-wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
     width: 1220px;
     margin: 0 auto;
@@ -80,73 +166,156 @@
   }
 }
 
-.form__fieldset {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  display: flex;
-  width: 280px;
-  flex-direction: column;
-}
-
-@media (min-width: $tablet-width) {
-  .form__fieldset {
-    display: flex;
-    width: 768px;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form__fieldset {
-    display: flex;
-    width: 1220px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form__fieldset--half-width {
-    display: flex;
-    width: 50%;
-  }
-}
-
 .fieldset-list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 14px;
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .fieldset-list--half-width {
+.fieldset-list--additionally {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.fieldset-list--half-width {
+  @media (min-width: $desktop-width) {
     display: flex;
     width: 50%;
   }
 }
 
-.fieldset-item {
+.fieldset-list__radio {
+  display: flex;
+  list-style: none;
+  margin: 22px 0 0 0;
+  padding: 0;
+  gap: 13px;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    outline: 1px solid #e7e7e7;
+    padding: 25px 28px;
+    margin: 0;
+  }
+}
+
+.fieldset-label {
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.fieldset-title {
+  display: flex;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    position: relative;
+    margin-right: 20px;
+    outline: solid 1px #cdcdcd;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.fieldset-input:checked + .fieldset-title::before {
+  position: relative;
+  content: "";
+  margin-right: 20px;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
 }
 
 // form__button
 
 .form__button {
   display: flex;
+  width: 320px;
   justify-content: center;
-}
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px 32px 20px;
 
-@media (min-width: $tablet-width) {
-  .form__button {
-    width: 768px;
+  @media (min-width: $tablet-width) {
     margin: 0 auto;
+    width: 768px;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 29px;
+    padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-top: 50px;
+    padding-left: 110px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form__button {
-    width: 1220px;
-    margin: 0 auto;
+.form__button-button {
+  display: flex;
+  font-family: $font-Oswald;
+  width: 280px;
+  height: 40px;
+  padding: 10px 44px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 21px 0;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 284px;
+    height: 54px;
+    padding: 14px 45px;
+    margin: 0 60px 0 0;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 54px;
+    padding: 14px 188px;
   }
 }
