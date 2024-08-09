@@ -5,6 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>HTML Academy: Кэт энерджи</title>
+
+  <link rel="icon" href="../favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicons/apple.png"> <!-- 152×152 -->
+  <link rel="manifest" href="../manifest.webmanifest">
+
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -27,7 +33,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list main-nav__list--background">
             <li class="main-nav__list-item">
-              <a class="main-nav__link--index link-current--index ">Главная</a>
+              <a class="main-nav__link--index main-nav__link-current--index ">Главная</a>
             </li>
             <li class="main-nav__list-item">
               <a class="main-nav__link--index " href="./catalog.html">Каталог продукции</a>
@@ -53,17 +59,17 @@
           <source srcset="./img/hero-img-tablet.png" media="(min-width: 768px)">
           <img src="./img/hero-img-mobile.png" class="hero__img" alt="Коробка с кормом Cat Energy">
         </picture>
-        <button class="hero__button button" type="button">Подобрать программу</button>
+        <button class="hero__button" type="button">Подобрать программу</button>
       </div>
     </section>
     <section class="program">
       <div class="program__wrapper">
         <div class="program__cart program__cart--mass-loss">
           <div class="program__icon-background">
-            <picture class="program__icon-slim">
-              <source srcset="./img/cat-slim-desktop.png" media="(min-width: 1440px)">
-              <source srcset="./img/cat-slim-tablet.png" media="(min-width: 768px)">
-              <img src="./img/cat-slim-mobile.svg" alt="чёрная кошка на зеленом фоне">
+            <picture>
+              <source srcset="./img/cat-slim-desktop.svg" media="(min-width: 1440px)">
+              <source srcset="./img/cat-slim-tablet.svg" media="(min-width: 768px)">
+              <img src="./img/cat-slim-mobile.svg" class="program__icon-slim" alt="чёрная кошка на зеленом фоне">
             </picture>
           </div>
           <h3 class="program__title">похудение</h3>
@@ -72,7 +78,8 @@
             поможет вашему питомцу сбросить лишний вес.</p>
           <div class="program__link">
             <a class="link" href="#">каталог slim
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="12" viewBox="0 0 32 12" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="program__link-arrow" width="32" height="12"
+                viewBox="0 0 32 12" fill="none">
                 <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
                 <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
               </svg>
@@ -81,10 +88,10 @@
         </div>
         <div class="program__cart program__cart--weight-gain">
           <div class="program__icon-background">
-            <picture class="program__icon-pro">
-              <source srcset="./img/cat-pro-desktop.png" media="(min-width: 1440px)">
-              <source srcset="./img/cat-pro-tablet.png" media="(min-width: 768px)">
-              <img src="./img/cat-pro-mobile.svg" alt="чёрная пантера на зеленом фоне">
+            <picture>
+              <source srcset="./img/cat-pro-desktop.svg" media="(min-width: 1440px)">
+              <source srcset="./img/cat-pro-tablet.svg" media="(min-width: 768px)">
+              <img src="./img/cat-pro-mobile.svg" class="program__icon-pro" alt="чёрная пантера на зеленом фоне">
             </picture>
           </div>
           <h3 class="program__title">Набор массы</h3>
@@ -93,7 +100,8 @@
             необходимые мышцы!</p>
           <div class="program__link">
             <a class="link" href="#">каталог pro
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="12" viewBox="0 0 32 12" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="program__link-arrow" width="32" height="12"
+                viewBox="0 0 32 12" fill="none">
                 <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
                 <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
               </svg>
@@ -112,17 +120,20 @@
             <span class="description__text-bg">1</span>
           </li>
           <li class="description__item">
-            <img src="./img/group-icon-mobile2.png" width="60" height="60" alt="Иконка: белый сосуд с водой на зелёном фоне">
+            <img src="./img/group-icon-mobile2.png" width="60" height="60"
+              alt="Иконка: белый сосуд с водой на зелёном фоне">
             <p class="description__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             <span class="description__text-bg">2</span>
           </li>
           <li class="description__item">
-            <img src="./img/group-icon-mobile3.png" width="60" height="60" alt="Иконка: белая вилка и ножик на зелёном фоне">
+            <img src="./img/group-icon-mobile3.png" width="60" height="60"
+              alt="Иконка: белая вилка и ножик на зелёном фоне">
             <p class="description__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             <span class="description__text-bg">3</span>
           </li>
           <li class="description__item">
-            <img src="./img/group-icon-mobile4.png" width="60" height="60" alt="Иконка: белый будильник на зелёном фоне">
+            <img src="./img/group-icon-mobile4.png" width="60" height="60"
+              alt="Иконка: белый будильник на зелёном фоне">
             <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             <span class="description__text-bg">4</span>
           </li>
@@ -152,20 +163,21 @@
         </div>
         <div class="case__images">
           <picture class="case__img case__imag--left">
-            <source srcset="./img/big-cat-tablet1x.png" media="(min-width: 768px)">
-            <img src="./img/big-cat-mobile1x.png" alt="слева толстый упитанный кот">
+            <source srcset="./img/big-cat-tablet1x.png, ./img/big-cat-tablet2x.png 2x" media="(min-width: 768px)">
+            <img src="./img/big-cat-mobile1x.png" srcset="./img/big-cat-mobile2x.png 2x"
+              alt="слева толстый упитанный кот">
           </picture>
           <picture class="case__img case__imag--right">
-            <source srcset="./img/little-cat-tablet1x.png" media="(min-width: 768px)">
-            <img src="./img/little-cat-mobile1x.png" alt="справа худой кот">
+            <source srcset="./img/little-cat-tablet1x.png, ./img/little-cat-tablet2x.png 2x" media="(min-width: 768px)">
+            <img src="./img/little-cat-mobile1x.png" srcset="./img/little-cat-mobile2x.png" alt="справа худой кот">
           </picture>
           <span class="case__slider-control">
             <button class="case__slider-button">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                <rect x="1" y="1" width="38" height="38" rx="19" fill="white"/>
-                <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2"/>
-                <path d="M16 11L8 20L16 29V11Z" fill="currentColor"/>
-                <path d="M32 20L24 11V29L32 20Z" fill="currentColor"/>
+                <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
+                <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" />
+                <path d="M16 11L8 20L16 29V11Z" fill="currentColor" />
+                <path d="M32 20L24 11V29L32 20Z" fill="currentColor" />
               </svg>
             </button>
           </span>

@@ -18,20 +18,16 @@
 
 .hero__background {
   color: #000000;
-}
 
-@media (max-width: $mobile-width-only) {
-  .hero__background {
+  @media (max-width: $mobile-width-only) {
     background-color: rgba(104, 183, 56, 0.85);
     background-image: url("../img/background-mobile.png");
     width: 320px;
     height: 302px;
     color: #ffffff;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .hero__background {
+  @media (min-width: $tablet-width) {
     margin-left: 120px;
     width: 416px;
   }
@@ -46,6 +42,13 @@
   font-weight: 400;
   line-height: 36px;
   margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
 }
 
 .hero__slogan {
@@ -58,23 +61,15 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 25px;
-}
 
-@media (min-width: $tablet-width) {
-  .hero__intro {
-    text-align: start;
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 60px;
-  }
-
-  .hero__slogan {
+  @media (min-width: $tablet-width) {
     text-align: start;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
   }
 }
+
 .hero__picture {
   @media (min-width: $tablet-width) {
     order: 2;
@@ -106,6 +101,7 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  @include button;
 
   &:hover {
     background-color: #5eaa2f;

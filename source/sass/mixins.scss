@@ -6,3 +6,13 @@
   width: 320px;
   margin: 0 auto;
 }
+
+@mixin button {
+  border: none;
+  background: #68b738;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
