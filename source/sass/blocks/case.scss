@@ -142,6 +142,11 @@
   bottom: -16px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    bottom: -5px;
+    width: 110px;
+  }
 }
 
 .case__module-result {
@@ -171,7 +176,11 @@
   @media (min-width: $desktop-width) {
     display: flex;
     position: static;
+    width: 300px;
     margin: 55px 0 0 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
