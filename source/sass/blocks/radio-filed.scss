@@ -33,6 +33,7 @@
     position: relative;
     margin-right: 20px;
     outline: solid 1px #cdcdcd;
+    -moz-outline-radius: 50%;
 
     &:focus {
       color: #bababa;

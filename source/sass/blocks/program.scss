@@ -4,6 +4,7 @@
 .program__wrapper {
   @include wrapper;
   gap: 20px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -67,11 +68,22 @@
 
 .program__icon-slim {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 36px;
   height: 50px;
+  max-width: none;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+  }
 }
 
 .program__icon-pro {
@@ -81,27 +93,14 @@
   transform: translate(-50%, -50%);
   width: 67px;
   height: 28px;
-}
+  max-width: none;
 
-@media (min-width: $tablet-width) {
-  .program__icon-slim {
-    width: 140px;
-    height: 194px;
-  }
-
-  .program__icon-pro {
+  @media (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .program__icon-slim {
-    width: 70px;
-    height: 97px;
-  }
-
-  .program__icon-pro {
+  @media (min-width: $desktop-width) {
     width: 134px;
     height: 56px;
   }
@@ -138,7 +137,12 @@
   @media (min-width: $tablet-width) {
     border: none;
     font-size: 16px;
+    width: 340px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
   }
 }
 
@@ -150,4 +154,13 @@
   line-height: normal;
   text-transform: uppercase;
   margin-top: 15px;
+}
+
+.program__link-arrow {
+  transition: ease;
+
+  &:hover {
+    //???
+    transform: translate(10px, 0px);
+  }
 }

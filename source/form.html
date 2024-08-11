@@ -5,6 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>HTML Academy: Кэт энерджи</title>
+
+  <link rel="icon" href="../favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicons/apple.png"> <!-- 152×152 -->
+  <link rel="manifest" href="../manifest.webmanifest">
+
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -21,7 +27,7 @@
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
 
-        <button class="main-nav__toggle button" type="button">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -33,7 +39,7 @@
               <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link link-current">Подбор программы</a>
+              <a class="main-nav__link main-nav__link--current">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -149,10 +155,9 @@
           </ul>
         </fieldset>
         <div class="form__button">
-          <button class="form__button-button button" type="submit">отправить заявку</button>
+          <button class="form__button-button" type="submit">отправить заявку</button>
           <span class="form__button-info">* — Обязательные поля</span>
         </div>
-
       </form>
     </div>
     <section class="cooperation">
