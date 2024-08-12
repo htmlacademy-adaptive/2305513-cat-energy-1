@@ -1,4 +1,4 @@
-.fieldset-wrapper {
+.fieldset__wrapper {
   width: 320px;
   margin: 0 auto;
   padding: 0;
@@ -17,7 +17,7 @@
   }
 }
 
-.fieldset-list {
+.fieldset__list {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -30,7 +30,21 @@
   }
 }
 
-.fieldset-list--additionally {
+.fieldset__list-contacts {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 14px;
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+    flex-direction: row;
+  }
+}
+
+.fieldset__list--additionally {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -43,14 +57,14 @@
   }
 }
 
-.fieldset-list--half-width {
+.fieldset__list--half-width {
   @media (min-width: $desktop-width) {
     display: flex;
     width: 50%;
   }
 }
 
-.fieldset-list__radio {
+.fieldset__list-radio {
   display: flex;
   list-style: none;
   margin: 22px 0 0 0;
@@ -65,7 +79,7 @@
   }
 }
 
-.fieldset-label {
+.fieldset__label {
   cursor: pointer;
 
   &:disabled {
@@ -73,7 +87,7 @@
   }
 }
 
-.fieldset-title {
+.fieldset__title {
   display: flex;
   font-size: 16px;
   line-height: 18px;
@@ -97,7 +111,7 @@
   }
 }
 
-.fieldset-input:checked + .fieldset-title::before {
+.fieldset__input:checked + .fieldset__title::before {
   position: relative;
   content: "";
   margin-right: 20px;

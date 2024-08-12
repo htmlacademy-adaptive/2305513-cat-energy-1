@@ -68,26 +68,34 @@
   padding: 0 20px;
   padding-left: 20px;
   border: none;
-  width: 320px;
+  width: 100%;
   flex-direction: column;
   border-bottom: solid 1px #d9d9d9;
   padding-bottom: 24px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    width: 768px;
-    flex-direction: column;
     padding-left: 70px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    width: 1220px;
-    margin: 0 auto;
     padding-left: 110px;
-    border: none;
+  }
+}
+
+.form__fieldset-wrapp {
+  display: flex;
+  margin: 0 auto;
+  width: 320px;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -136,6 +144,7 @@
   padding: 9px 20px;
   outline: 1px solid #e7e7e7;
   cursor: pointer;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     height: 175px;

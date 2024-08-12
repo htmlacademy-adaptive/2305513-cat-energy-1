@@ -1,6 +1,7 @@
+
+
 .additional__wrapper {
   @include wrapper;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -11,6 +12,10 @@
     width: 1220px;
     padding-left: 70px;
   }
+}
+
+.additional-products {
+  position: relative;
 }
 
 .additional-products__wrapper {

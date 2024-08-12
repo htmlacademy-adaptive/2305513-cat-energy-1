@@ -154,13 +154,20 @@
   line-height: normal;
   text-transform: uppercase;
   margin-top: 15px;
+  display: flex;
+  align-items: center;
+  @include link;
+  padding: 4px 0px;
+  width: 170px;
 }
 
 .program__link-arrow {
-  transition: ease;
+  overflow: hidden;
+  position: relative;
+  width: 24px;
+  margin-left: 25px;
 
-  &:hover {
-    //???
-    transform: translate(10px, 0px);
+  .program__link:hover & {
+    width: 32px;
   }
 }

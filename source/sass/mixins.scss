@@ -16,3 +16,8 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+@mixin link {
+  text-decoration: none;
+  color: currentColor;
+}
