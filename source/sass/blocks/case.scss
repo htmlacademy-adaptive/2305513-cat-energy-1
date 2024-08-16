@@ -226,7 +226,6 @@
   position: absolute;
   display: block;
   width: 4px;
-  left: 11px;
   height: 100%;
   left: 50%;
   border-radius: 2px;
@@ -248,9 +247,6 @@
   bottom: 50%;
   border: none;
 
-  @media (min-width: $tablet-width) {
-  }
-
   &:hover {
     background-color: $basic-green;
   }
@@ -261,9 +257,6 @@
   top: 0;
   left: 0;
   color: #666666;
-
-  @media (min-width: $desktop-width) {
-  }
 
   &:hover {
     color: $basic-green;

@@ -4,7 +4,6 @@
 //   outline: solid #f00 1px !important;
 // }
 
-
 // добавляет миксины
 @import "./mixins.scss";
 @import "./variables.scss";
@@ -16,13 +15,11 @@
 
 // блоки компонентов
 
-@import "./blocks/page-body.scss";
 @import "./blocks/additional.scss";
 @import "./blocks/bonus.scss";
 @import "./blocks/case.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/checkbox-filed.scss";
-@import "./blocks/contacts-owner.scss";
 @import "./blocks/cooperation.scss";
 @import "./blocks/description.scss";
 @import "./blocks/form.scss";
@@ -30,7 +27,6 @@
 @import "./blocks/main.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
-@import "./blocks/page-body.scss";
 @import "./blocks/program.scss";
 @import "./blocks/text-field.scss";
 @import "./blocks/radio-filed.scss";
