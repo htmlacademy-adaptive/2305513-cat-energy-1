@@ -9,13 +9,13 @@
   display: block;
   width: 24px;
   height: 24px;
-  background-color: $basic_white;
+  background-color: $basic-white;
   cursor: pointer;
   border: none;
 
   &:hover,
   &:active {
-    background-color: $basic_white;
+    background-color: $basic-white;
   }
 }
 
@@ -48,7 +48,7 @@
     left: 0;
     width: 25px;
     height: 2px;
-    background-color: $basic_black;
+    background-color: $basic-black;
   }
 
   &::before {
@@ -97,7 +97,7 @@
 
 @media (max-width: $mobile-width-only) {
   .main-nav__list {
-    background-color: $basic_white;
+    background-color: $basic-white;
     width: 322px;
     position: absolute;
     left: -21px;
@@ -129,7 +129,7 @@
 .main-nav__list-item {
   display: flex;
   justify-content: center;
-  color: $basic_black;
+  color: $basic-black;
   font-family: $font-Oswald;
   width: 100%;
   font-size: 18px;
@@ -139,7 +139,7 @@
   padding-top: 22px;
   padding-bottom: 24px;
   border-top: 1px solid #e6e6e6;
-  background-color: $basic_white;
+  background-color: $basic-white;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
@@ -170,7 +170,7 @@
 }
 
 .main-nav__link--index {
-  color: $basic_black;
+  color: $basic-black;
   text-decoration: none;
 
   &:hover {
@@ -182,13 +182,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: $basic_white;
+    color: $basic-white;
     text-decoration: none;
   }
 }
 
 .main-nav__link {
-  color: $basic_black;
+  color: $basic-black;
   text-decoration: none;
 
   &:hover {
@@ -215,7 +215,7 @@
       background-color: #68b738;
 
       @media (min-width: $desktop-width) {
-        background-color: $basic_white;
+        background-color: $basic-white;
       }
     }
   }

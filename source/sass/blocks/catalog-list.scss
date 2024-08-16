@@ -34,7 +34,7 @@
     height: 511px;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient($basic_white 81px, $basic_grey 81px);
+    background: linear-gradient($basic-white 81px, $basic-grey 81px);
     padding: 0px 37px 40px 37px;
     border: none;
     justify-content: flex-end;
@@ -106,7 +106,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 0;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   text-align: center;
   font-size: 12px;
   font-weight: 400;
@@ -228,7 +228,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: $basic_grey;
+  background-color: $basic-grey;
 
   &:hover {
     background-color: #ebebeb;

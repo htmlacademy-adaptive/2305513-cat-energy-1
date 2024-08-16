@@ -54,7 +54,7 @@
   color: #666666;
 
   &:hover {
-    color: $basic_green;
+    color: $basic-green;
   }
 
   &:active {
@@ -79,7 +79,7 @@
   }
 
   &:hover {
-    color: $basic_green;
+    color: $basic-green;
   }
 
   &:active {
@@ -91,14 +91,14 @@
   font-family: $font-Lato;
   font-size: 16px;
   line-height: 20px;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
 }
 
 .footer__social-autor{
   color: #666666;
 
   &:hover {
-    color: $basic_green;
+    color: $basic-green;
   }
 
   &:active {

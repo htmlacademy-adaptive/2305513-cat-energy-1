@@ -25,13 +25,13 @@
 }
 
 .additional-products__title {
-  color: $basic_black;
+  color: $basic-black;
   font-family: $font-Oswald;
   font-size: 24px;
   line-height: 24px;
   width: min-content;
   white-space: nowrap;
-  background-color: $basic_white;
+  background-color: $basic-white;
   padding: 0 20px;
   margin-left: -20px;
 
@@ -43,7 +43,7 @@
     left: 0;
     height: 2px;
     width: 100%;
-    background-color: $basic_green;
+    background-color: $basic-green;
 
     @media (min-width: $desktop-width) {
       padding: 0 40px;
@@ -150,7 +150,7 @@
   margin: 15px 0 19px 0;
   justify-content: center;
   align-items: center;
-  background-color: $basic_green;
+  background-color: $basic-green;
   text-transform: uppercase;
   text-align: center;
   font-family: $font-Oswald;

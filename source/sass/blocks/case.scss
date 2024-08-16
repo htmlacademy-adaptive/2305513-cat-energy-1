@@ -129,7 +129,7 @@
   padding: 0 10px;
 
   @media (min-width: $tablet-width) {
-    background-color: $basic_white;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
@@ -233,7 +233,7 @@
   background-color: #666666;
 
   &:hover {
-    background-color: $basic_green;
+    background-color: $basic-green;
   }
 }
 
@@ -252,7 +252,7 @@
   }
 
   &:hover {
-    background-color: $basic_green;
+    background-color: $basic-green;
   }
 }
 
@@ -266,6 +266,6 @@
   }
 
   &:hover {
-    color: $basic_green;
+    color: $basic-green;
   }
 }
