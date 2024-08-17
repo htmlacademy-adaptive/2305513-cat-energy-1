@@ -1,6 +1,3 @@
-.cooperation {
-}
-
 .cooperation__wrapper {
   @include wrapper;
 
@@ -41,12 +38,6 @@
   text-transform: uppercase;
   width: 140px;
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-  }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .cooperation__text {
@@ -66,7 +57,4 @@
   @media (min-width: $desktop-width) {
     width: 161px;
   }
-}
-
-.cooperation__map {
 }

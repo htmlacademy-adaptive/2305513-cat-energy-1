@@ -31,7 +31,6 @@
     padding-bottom: 61px;
     row-gap: 24px;
     grid-template-columns: 1fr 264px;
-    grid-template-rows: repeat(3, -webkit-max-content);
     grid-template-rows: repeat(3, max-content);
   }
 
