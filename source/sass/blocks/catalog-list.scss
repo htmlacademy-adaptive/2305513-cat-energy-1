@@ -35,7 +35,7 @@
     flex-direction: column;
     align-items: center;
     background: linear-gradient($basic-white 81px, $basic-grey 81px);
-    padding: 0px 37px 40px 37px;
+    padding: 0 37px 40px 37px;
     border: none;
     justify-content: flex-end;
   }
@@ -125,7 +125,7 @@
   @include button;
   display: flex;
   width: 280px;
-  padding: 10px 0px;
+  padding: 10px 0;
   color: $basic-white;
   font-family: $font-Oswald;
   font-size: 16px;
@@ -222,7 +222,7 @@
   display: flex;
   @include button;
   width: 280px;
-  padding: 10px 0px;
+  padding: 10px 0;
   color: $basic-black;
   font-family: $font-Oswald;
   font-size: 16px;
