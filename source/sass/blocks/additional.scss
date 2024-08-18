@@ -141,6 +141,7 @@
 
 .additional-products__link {
   display: flex;
+
   @include button;
   width: 320px;
   height: 40px;

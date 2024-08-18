@@ -181,6 +181,7 @@
 
 .form__button-button {
   display: flex;
+
   @include button;
   font-family: $font-Oswald;
   width: 280px;
