@@ -122,7 +122,7 @@
 
 .catalog-list__item-link {
   grid-column: 1 / -1;
-  @include button;
+   @include button;
   display: flex;
   width: 280px;
   padding: 10px 0;
@@ -220,7 +220,7 @@
 .catalog-list__more-link {
   grid-column: 1 / -1;
   display: flex;
-  @include button;
+   @include button;
   width: 280px;
   padding: 10px 0;
   color: $basic-black;
