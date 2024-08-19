@@ -1,6 +1,3 @@
-.main {
-}
-
 @media (min-width: $desktop-width) {
   .main::before {
     content: "";
@@ -10,6 +7,7 @@
     width: 50%;
     height: 696px;
     background-image: url("../img/background-desktop.png");
+    background-repeat: no-repeat;
     z-index: -2;
   }
 }
@@ -22,7 +20,7 @@
     top: 0;
     width: 50%;
     height: 696px;
-    background-color: rgba(104, 183, 56, 0.85);;
+    background-color: rgba(104, 183, 56, 0.85);
     z-index: -2;
   }
 }

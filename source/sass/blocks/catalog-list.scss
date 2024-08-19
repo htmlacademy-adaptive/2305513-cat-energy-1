@@ -9,16 +9,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 60px;
-    row-gap: 140px;
+    gap: 60px;
     align-items: end;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
-    row-gap: 143px;
+    gap: 80px;
   }
 }
 
@@ -33,25 +31,22 @@
   @media (min-width: $tablet-width) {
     display: flex;
     width: 324px;
+    height: 511px;
     flex-direction: column;
     align-items: center;
-    background-color: $basic_grey;
-    padding: 0px 37px 40px 37px;
+    background: linear-gradient($basic-white 81px, $basic-grey 81px);
+    padding: 0 37px 40px 37px;
     border: none;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     width: 245px;
-    flex-direction: column;
-    align-items: center;
   }
 }
 
 .catalog-list__picture {
   display: flex;
-  width: 140px;
-  height: 107px;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
@@ -75,6 +70,7 @@
   justify-content: center;
   text-align: center;
   width: 76px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     width: 135px;
@@ -110,7 +106,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 0;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   text-align: center;
   font-size: 12px;
   font-weight: 400;
@@ -126,10 +122,11 @@
 
 .catalog-list__item-link {
   grid-column: 1 / -1;
+
   @include button;
   display: flex;
   width: 280px;
-  padding: 10px 0px;
+  padding: 10px 0;
   color: $basic-white;
   font-family: $font-Oswald;
   font-size: 16px;
@@ -171,7 +168,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    padding: 119px 36px 40px;
+    padding: 145px 36px 40px;
   }
 }
 
@@ -224,15 +221,16 @@
 .catalog-list__more-link {
   grid-column: 1 / -1;
   display: flex;
+
   @include button;
   width: 280px;
-  padding: 10px 0px;
+  padding: 10px 0;
   color: $basic-black;
   font-family: $font-Oswald;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: $basic_grey;
+  background-color: $basic-grey;
 
   &:hover {
     background-color: #ebebeb;
@@ -250,5 +248,6 @@
 
   @media (min-width: $desktop-width) {
     width: 169px;
+    margin: 0;
   }
 }

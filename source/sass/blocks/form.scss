@@ -68,26 +68,34 @@
   padding: 0 20px;
   padding-left: 20px;
   border: none;
-  width: 320px;
+  width: 100%;
   flex-direction: column;
   border-bottom: solid 1px #d9d9d9;
   padding-bottom: 24px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    width: 768px;
-    flex-direction: column;
     padding-left: 70px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    width: 1220px;
-    margin: 0 auto;
     padding-left: 110px;
-    border: none;
+  }
+}
+
+.form__fieldset-wrapp {
+  display: flex;
+  margin: 0 auto;
+  width: 320px;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -103,7 +111,7 @@
   font-size: 24px;
   line-height: 26px;
   margin: 26px 0 35px -20px;
-  background-color: $basic_white;
+  background-color: $basic-white;
   padding: 0 20px;
   width: min-content;
   white-space: nowrap;
@@ -116,7 +124,7 @@
     left: 0;
     height: 2px;
     width: 100%;
-    background-color: $basic_green;
+    background-color: $basic-green;
 
     @media (min-width: $desktop-width) {
       padding: 0 40px;
@@ -136,14 +144,12 @@
   padding: 9px 20px;
   outline: 1px solid #e7e7e7;
   cursor: pointer;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     height: 175px;
     font-size: 20px;
     line-height: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
   }
 }
 
@@ -170,11 +176,13 @@
     width: 1220px;
     margin-top: 50px;
     padding-left: 110px;
+    margin-bottom: 79px;
   }
 }
 
 .form__button-button {
   display: flex;
+
   @include button;
   font-family: $font-Oswald;
   width: 280px;

@@ -1,6 +1,3 @@
-.program {
-}
-
 .program__wrapper {
   @include wrapper;
   gap: 20px;
@@ -34,7 +31,6 @@
     padding-bottom: 61px;
     row-gap: 24px;
     grid-template-columns: 1fr 264px;
-    grid-template-rows: repeat(3, -webkit-max-content);
     grid-template-rows: repeat(3, max-content);
   }
 
@@ -154,13 +150,21 @@
   line-height: normal;
   text-transform: uppercase;
   margin-top: 15px;
+  display: flex;
+  align-items: center;
+
+  @include link;
+  padding: 4px 0;
+  width: 170px;
 }
 
 .program__link-arrow {
-  transition: ease;
+  overflow: hidden;
+  position: relative;
+  width: 24px;
+  margin-left: 25px;
 
-  &:hover {
-    //???
-    transform: translate(10px, 0px);
+  .program__link:hover & {
+    width: 32px;
   }
 }

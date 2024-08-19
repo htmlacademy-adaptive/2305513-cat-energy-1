@@ -1,6 +1,5 @@
 .additional__wrapper {
   @include wrapper;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -13,6 +12,10 @@
   }
 }
 
+.additional-products {
+  position: relative;
+}
+
 .additional-products__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -20,13 +23,13 @@
 }
 
 .additional-products__title {
-  color: $basic_black;
+  color: $basic-black;
   font-family: $font-Oswald;
   font-size: 24px;
   line-height: 24px;
   width: min-content;
   white-space: nowrap;
-  background-color: $basic_white;
+  background-color: $basic-white;
   padding: 0 20px;
   margin-left: -20px;
 
@@ -38,7 +41,7 @@
     left: 0;
     height: 2px;
     width: 100%;
-    background-color: $basic_green;
+    background-color: $basic-green;
 
     @media (min-width: $desktop-width) {
       padding: 0 40px;
@@ -60,7 +63,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     width: 708px;
-    padding: 26px 0px 28px 0px;
+    padding: 26px 0 28px 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -138,14 +141,15 @@
 
 .additional-products__link {
   display: flex;
+
   @include button;
   width: 320px;
   height: 40px;
-  padding: 10px 0px;
+  padding: 10px 0;
   margin: 15px 0 19px 0;
   justify-content: center;
   align-items: center;
-  background-color: $basic_green;
+  background-color: $basic-green;
   text-transform: uppercase;
   text-align: center;
   font-family: $font-Oswald;

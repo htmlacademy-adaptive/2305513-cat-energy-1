@@ -4,13 +4,14 @@
 }
 
 .text-field__title {
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   font-family: $font-Oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   white-space: nowrap;
+  margin-right: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -19,20 +20,15 @@
 }
 
 .text-field input {
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   width: 100%;
   font-family: $font-Oswald;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 14px 15px;
+  padding: 14px 40px 14px 15px;
   border: none;
   outline: 1px solid #e7e7e7;
-  cursor: pointer;
-}
-
-.text-field__title {
-  margin-right: 13px;
 }
 
 .text-field__text-icon-mail {

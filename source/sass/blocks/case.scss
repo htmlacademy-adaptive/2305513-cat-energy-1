@@ -129,7 +129,7 @@
   padding: 0 10px;
 
   @media (min-width: $tablet-width) {
-    background-color: $basic_white;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
@@ -225,21 +225,14 @@
 .case__slider-control {
   position: absolute;
   display: block;
-  height: 4px;
-  left: 11px;
-  width: 257px;
-  bottom: 50%;
+  width: 4px;
+  height: 100%;
+  left: 50%;
   border-radius: 2px;
   background-color: #666666;
-  transform: rotate(90deg);
 
   &:hover {
-    background-color: $basic_green;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 512px;
-    left: 24px;
+    background-color: $basic-green;
   }
 }
 
@@ -250,31 +243,22 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  top: -18px;
-  left: 41%;
-  transform: rotate(90deg);
-
-  @media (min-width: $tablet-width) {
-    left: 46%;
-  }
+  left: -18px;
+  bottom: 50%;
+  border: none;
 
   &:hover {
-    background-color: $basic_green;
+    background-color: $basic-green;
   }
 }
 
 .case__slider-button svg {
   position: absolute;
-  top: -2px;
-  left: -2px;
+  top: 0;
+  left: 0;
   color: #666666;
 
-  @media (min-width: $desktop-width) {
-    top: -1px;
-    left: -1px;
-  }
-
   &:hover {
-    color: $basic_green;
+    color: $basic-green;
   }
 }
