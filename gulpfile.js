@@ -13,7 +13,6 @@ import terser from 'gulp-terser';
 import del from 'del';
 
 // Styles
-
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
@@ -27,24 +26,17 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-// Server
-
-const server = (done) => {
-  browser.init({
-    server: {
-      baseDir: 'build'
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
-}
-
-//HTML
+// HTML
 const html = () => {
   return gulp.src('source/*.html')
     .pipe(gulp.dest('build'));
+}
+
+// Scripts
+const scripts = () => {
+  return gulp.src('source/js/script.js')
+    .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream());
 }
 
 // Images
@@ -69,7 +61,7 @@ const createWebp = () => {
 
 // SVG
 const svg = () =>
-  gulp.src(['source/img/*.svg'])
+  gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img')); const sprite = () => {
       return gulp.src('source/img/icons/*.svg')
@@ -93,10 +85,23 @@ const copy = (done) => {
   done();
 }
 
-// Clear
+// Clean
 const clean = () => {
   return del('build');
 };
+
+// Server
+const server = (done) => {
+  browser.init({
+    server: {
+      baseDir: 'build'
+    },
+    cors: true,
+    notify: false,
+    ui: false,
+  });
+  done();
+}
 
 // Reload
 const reload = (done) => {
