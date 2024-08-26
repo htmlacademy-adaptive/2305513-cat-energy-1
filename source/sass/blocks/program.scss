@@ -37,6 +37,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     width: 570px;
+    padding-top: 43px;
+    row-gap: 0;
   }
 }
 
@@ -119,6 +121,11 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 41px;
+    margin-bottom: 25px;
+  }
 }
 
 .program__description {
@@ -138,7 +145,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 450px;
+    width: 455px;
+    margin-top: 17px;
   }
 }
 
@@ -156,15 +164,25 @@
   @include link;
   padding: 4px 0;
   width: 170px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
+
+.program__link:hover svg{
+    transform: translateX(0);
+  }
 
 .program__link-arrow {
   overflow: hidden;
   position: relative;
-  width: 24px;
+  width: 32px;
   margin-left: 25px;
 
-  .program__link:hover & {
-    width: 32px;
-  }
 }
+
+.program__link-arrow svg {
+    transform: translateX(-10px);
+    transition: 300ms;
+  }

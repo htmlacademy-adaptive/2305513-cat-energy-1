@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 1440px;
   }
 }
 
@@ -28,13 +28,13 @@
   }
 }
 
-.footer__social-logo svg {
+.footer__social-logo {
   &:hover {
-    color: #3e3e3e;
+    fill: #3e3e3e;
   }
 
   &:active {
-    color: #6b6b6b;
+    fill: #6b6b6b;
   }
 }
 
@@ -46,11 +46,11 @@
   padding: 0;
 }
 
-.footer__social-item svg {
-  color: #666666;
+.footer__social-item-link {
+  fill: #666666;
 
   &:hover {
-    color: $basic-green;
+    fill: $basic-green;
   }
 
   &:active {
@@ -69,14 +69,14 @@
   text-decoration: none;
   align-items: center;
   justify-content: space-between;
-  color: #666666;
+  fill: #666666;
 
   @media (min-width: $tablet-width) {
     gap: 23px;
   }
 
   &:hover {
-    color: $basic-green;
+    fill: $basic-green;
   }
 
   &:active {

@@ -26,6 +26,12 @@
 
   @media (min-width: $tablet-width) {
     text-align: start;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 64px 0 35px 0;
   }
 }
 
@@ -109,6 +115,11 @@
     height: 80px;
     margin-top: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+
 }
 
 .description__text {
@@ -123,23 +134,3 @@
     line-height: 24px;
   }
 }
-
-// .description__text-bg {
-//   text-align: center;
-//   font-family: $font-Oswald;
-//   font-size: 280px;
-//   font-weight: 400;
-//   line-height: 280px;
-//   color: $basic-grey;
-
-//   @media (max-width: $mobile-width-only) {
-//     display: none;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     display: inline;
-//     position: absolute;
-//     right: 0;
-//     z-index: -2;
-//   }
-// }

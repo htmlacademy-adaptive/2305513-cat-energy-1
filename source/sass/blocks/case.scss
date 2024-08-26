@@ -19,6 +19,10 @@
       background: #f2f2f2;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+   }
 }
 
 .case__wrapper {
@@ -47,6 +51,8 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
     display: flex;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -246,19 +252,16 @@
   left: -18px;
   bottom: 50%;
   border: none;
-
-  &:hover {
-    background-color: $basic-green;
-  }
 }
 
 .case__slider-button svg {
   position: absolute;
   top: 0;
   left: 0;
-  color: #666666;
+  fill: $basic-white;
+  stroke: #666666;
+}
 
-  &:hover {
-    color: $basic-green;
-  }
+.case__slider-button:hover svg {
+  stroke: $basic-green;
 }

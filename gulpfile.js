@@ -3,14 +3,14 @@ import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
-import browser from 'browser-sync';
-import svgmin from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
-import squoosh from 'gulp-libsquoosh';
-import rename from 'gulp-rename';
 import csso from 'postcss-csso';
+import rename from 'gulp-rename';
 import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
 import del from 'del';
+import browser from 'browser-sync';
 
 // Styles
 export const styles = () => {
@@ -63,15 +63,16 @@ const createWebp = () => {
 const svg = () =>
   gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
-    .pipe(gulp.dest('build/img')); const sprite = () => {
-      return gulp.src('source/img/icons/*.svg')
-        .pipe(svgo())
-        .pipe(svgstore({
-          inlineSvg: true
-        }))
-        .pipe(rename('sprite.svg'))
-        .pipe(gulp.dest('build/img'));
-    }
+    .pipe(gulp.dest('build/img'));
+const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
+}
 
 // Copy
 const copy = (done) => {
@@ -148,4 +149,3 @@ export default gulp.series(
     server,
     watcher
   ));
-
