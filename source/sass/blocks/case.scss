@@ -22,7 +22,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 40px;
-   }
+  }
 }
 
 .case__wrapper {
@@ -30,7 +30,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    align-items: flex-start;
+    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,14 +49,14 @@
   margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin: 63px 0 60px 0;
     display: flex;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
+    margin: 0 0 146px 0;
   }
 }
 
@@ -67,16 +67,18 @@
   line-height: 18px;
   font-family: $font-Lato;
   margin: 0 0 20px 0;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
-    width: 436px;
+    width: 432px;
   }
 }
 
@@ -95,6 +97,7 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
+    margin: 0;
   }
 }
 
@@ -109,12 +112,12 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    height: 77px;
+    height: 70px;
   }
 }
 
 .case__module-border--margin {
-  margin-right: 32px;
+  margin-right: 42px;
 }
 
 .case__module-title {
@@ -123,10 +126,16 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .case__module-description {
   color: #444444;
+  font-family: $font-Lato;
   text-align: center;
   font-size: 12px;
   font-weight: 400;
@@ -151,7 +160,10 @@
 
   @media (min-width: $tablet-width) {
     bottom: -5px;
-    width: 110px;
+    width: 140px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
   }
 }
 
@@ -168,22 +180,26 @@
   justify-content: center;
   flex-direction: column;
 
+  & span {
+    margin-top: 7px;
+
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     top: -77px;
     font-size: 20px;
     display: flex;
     width: 174px;
-    margin: 0;
-    margin-left: auto;
+    margin: 0 30px 0 auto;
     text-align: end;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     position: static;
-    width: 300px;
-    margin: 55px 0 0 0;
+    width: 326px;
+    margin: 62px 0 0 0;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -200,10 +216,16 @@
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
+    margin-top: 147px;
+    position: relative;
+    top: -108px;
+    left: -18px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 85px;
+    margin: 0 0 85px 88px ;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -240,6 +262,14 @@
   &:hover {
     background-color: $basic-green;
   }
+
+  &:hover svg {
+    fill: $basic-green;
+  }
+
+  &:hover .case__slider-button {
+    outline-color: $basic-green;
+  }
 }
 
 .case__slider-button {
@@ -250,18 +280,22 @@
   width: 40px;
   height: 40px;
   left: -18px;
-  bottom: 50%;
+  bottom: 46%;
   border: none;
+  outline: 3px solid #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case__slider-button:hover {
+  outline-color: $basic-green;
 }
 
 .case__slider-button svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  fill: $basic-white;
-  stroke: #666666;
+  fill: #666666;
 }
 
 .case__slider-button:hover svg {
-  stroke: $basic-green;
+  fill: $basic-green;
 }

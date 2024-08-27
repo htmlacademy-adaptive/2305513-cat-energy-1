@@ -19,12 +19,12 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 55px 30px;
+    padding: 49px 30px;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 110px;
+    padding: 60px 110px;
   }
 }
 
@@ -44,6 +44,14 @@
   justify-content: center;
   gap: 24px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 17px 0px 11px 39px;
+  }
 }
 
 .footer__social-item-link {
