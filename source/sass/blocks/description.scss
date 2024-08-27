@@ -1,5 +1,6 @@
 .description__wrapper {
   @include wrapper;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -20,21 +21,21 @@
 
 .description__title {
   color: $basic-black;
-  text-align: center;
   font-family: $font-Oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+  margin: 17px 0 42px 0;
 
   @media (min-width: $tablet-width) {
     text-align: start;
     font-size: 60px;
     line-height: 60px;
-    margin: 38px 0 31px 0;
+    margin: 46px 0 31px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 64px 0 35px 0;
+    margin: 71px 0 35px;
   }
 }
 
@@ -99,7 +100,7 @@
   @media (max-width: $mobile-width-only) {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     gap: 20px;
   }
 
@@ -133,10 +134,12 @@
   font-size: 14px;
   line-height: 18px;
   font-family: $font-Lato;
+  width: 200px;
 
   @media (min-width: $tablet-width) {
     margin-top: -31px;
     font-size: 16px;
     line-height: 24px;
+    width: 250px;
   }
 }
