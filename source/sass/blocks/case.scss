@@ -174,10 +174,10 @@
 
   @media (min-width: $tablet-width) {
     bottom: -8px;
-    width: 126px;
+    width: 140px;
     font-size: 14px;
     line-height: 14px;
-    padding: 0;
+    padding: 0 5px;
   }
 }
 
@@ -194,7 +194,6 @@
   & span {
     margin-left: 5px;
   }
-
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -295,16 +294,15 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  left: -20px;
+  left: -18px;
   bottom: 43%;
   border: none;
-  outline: 3px solid #666666;
+  outline: 2px solid #666666;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    left: -20px;
     bottom: 46%;
   }
 }

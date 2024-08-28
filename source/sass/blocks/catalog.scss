@@ -24,9 +24,13 @@
 
   @media (min-width: $tablet-width) {
     justify-content: start;
-    margin-bottom: 84px;
+    margin: 35px 0 43px 29px;
     font-size: 60px;
     line-height: 60px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 47px 0 40px 0px;
   }
 }

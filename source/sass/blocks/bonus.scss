@@ -5,9 +5,11 @@
 
 .bonus__wrapper {
   @include wrapper;
+  margin: 37px auto;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    margin: 42px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,10 +18,18 @@
   }
 }
 
+.bonus__wrapper--catalog {
+  margin-bottom: 122px;
+}
+
 .bonus__picture {
   position: relative;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+  }
 }
 
 .bonus__icon {
@@ -48,6 +58,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 71px 125px 69px 421px;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
