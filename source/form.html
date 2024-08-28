@@ -22,7 +22,7 @@
         <picture>
           <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)">
           <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
-          <img src="./img/logo-mobile.svg" alt="Логотип Cat Energy">
+          <img class="main-header__images" src="./img/logo-mobile.svg" alt="Логотип Cat Energy">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -123,7 +123,7 @@
 
         <fieldset class="form__fieldset">
           <div class="form__fieldset-wrapp">
-            <label for="message" class="form__fieldset-title">Комментарий</label>
+            <label for="message" class="form__fieldset-title form__fieldset-title--comment">Комментарий</label>
             <textarea class="form__fieldset-textarea" cols="30" rows="10" name="comment-owner"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
@@ -131,7 +131,7 @@
 
         <fieldset class="form__fieldset">
           <div class="form__fieldset-wrapp">
-            <h2 class="form__fieldset-title">Дополнительно</h2>
+            <h2 class="form__fieldset-title form__fieldset-title--dop">Дополнительно</h2>
 
             <ul class="fieldset__list fieldset__list--additionally">
               <li class="fieldset__item">
