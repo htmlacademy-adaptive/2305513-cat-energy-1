@@ -25,6 +25,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 22px;
+    width: 625px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,9 +52,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 62px;
+    gap: 80px;
     flex-direction: row;
-    padding: 0 136px 0 65px;
+    padding: 0 161px 0 55px;
   }
 }
 
@@ -63,20 +64,26 @@
     grid-template-columns: repeat(2, 1fr);
     margin: 0 45px 0 44px;
     row-gap: 32px;
+    column-gap: 68px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1195px;
+    margin: 0 0 0 56px;
+    column-gap: 104px;
   }
 }
 
 .fieldset__list--half-width {
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 50%;
+    width: 570px;
   }
 }
 
@@ -96,7 +103,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 27px 30px;
-    margin: 0 0 0 38px;
+    margin: 0 0 0 23px;
   }
 }
 
@@ -137,7 +144,7 @@
   }
 }
 
-.fieldset__input:checked + .fieldset__title::before {
+.fieldset__input:checked+.fieldset__title::before {
   position: relative;
   content: "";
   margin-right: 15px;
