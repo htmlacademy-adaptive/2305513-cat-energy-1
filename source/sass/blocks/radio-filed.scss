@@ -41,11 +41,12 @@
     @media (min-width: $tablet-width) {
       width: 40px;
       height: 40px;
+      margin-right: 20px;
     }
   }
 }
 
-.radio-field__button:checked+.radio-field__title::before {
+.radio-field__button:checked + .radio-field__title::before {
   content: "";
   background-image: url("../img/radio-button.svg");
   background-repeat: no-repeat;

@@ -23,6 +23,10 @@
   padding: 0;
   gap: 14px;
 
+  @media (min-width: $tablet-width) {
+    gap: 22px;
+  }
+
   @media (min-width: $desktop-width) {
     gap: 20px;
   }
@@ -41,9 +45,15 @@
   padding: 0 20px;
   gap: 14px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 95px 0 46px;
+    gap: 22px;
+  }
+
   @media (min-width: $desktop-width) {
-    gap: 20px;
+    gap: 62px;
     flex-direction: row;
+    padding: 0 136px 0 65px;
   }
 }
 
@@ -51,12 +61,15 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 45px 0 44px;
+    row-gap: 32px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -75,10 +88,15 @@
   gap: 13px;
   flex-direction: column;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    margin: 22px 50px 0 0;
+    padding: 22px 0 27px 27px;
     outline: 1px solid #e7e7e7;
-    padding: 25px 28px;
-    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 30px;
+    margin: 0 0 0 38px;
   }
 }
 
@@ -106,6 +124,11 @@
     position: relative;
     margin-right: 20px;
     outline: solid 1px #cdcdcd;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -114,7 +137,7 @@
   }
 }
 
-.fieldset__input:checked+.fieldset__title::before {
+.fieldset__input:checked + .fieldset__title::before {
   position: relative;
   content: "";
   margin-right: 15px;
@@ -122,4 +145,8 @@
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }

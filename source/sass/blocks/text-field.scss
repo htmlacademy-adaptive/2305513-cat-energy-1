@@ -1,6 +1,10 @@
 .text-field {
   display: flex;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    width: 550px;
+  }
 }
 
 .text-field__title {
@@ -16,6 +20,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
+    margin-right: 15px;
   }
 }
 
@@ -29,6 +34,16 @@
   padding: 14px 40px 14px 15px;
   border: none;
   outline: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    padding: 10px 40px 10px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 490px;
+  }
 }
 
 .text-field__text-icon-mail {
@@ -38,7 +53,7 @@
     position: relative;
     content: "";
     display: flex;
-    right: 32px;
+    right: 33px;
     background-image: url("../img/email.svg");
     width: 20px;
     height: 20px;
@@ -52,7 +67,7 @@
     position: relative;
     content: "";
     display: flex;
-    right: 32px;
+    right: 33px;
     background-image: url("../img/phone.svg");
     width: 20px;
     height: 20px;
