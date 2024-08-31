@@ -52,9 +52,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 80px;
+    gap: 82px;
     flex-direction: row;
-    padding: 0 161px 0 55px;
+    padding: 0 158px 0 55px;
   }
 }
 
@@ -68,10 +68,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 1195px;
