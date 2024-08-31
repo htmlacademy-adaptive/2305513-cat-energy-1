@@ -81,7 +81,6 @@
     line-height: 280px;
     color: $basic-grey;
     counter-increment: description;
-    content: counter(description);
     position: absolute;
 
     @media (max-width: $mobile-width-only) {

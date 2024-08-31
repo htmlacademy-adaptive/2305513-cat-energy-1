@@ -16,7 +16,7 @@
   padding: 0 20px 40px;
   margin-top: 37px;
   gap: 20px;
-  background-color: #F2F2F2;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -28,16 +28,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 38px 110px;
-  }
-}
-
-.footer__social-logo {
-  &:hover {
-    fill: #3e3e3e;
-  }
-
-  &:active {
-    fill: #6b6b6b;
   }
 }
 
@@ -57,7 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 17px 0px 11px 39px;
+    margin: 17px 0 11px 39px;
   }
 }
 
@@ -81,6 +71,14 @@
   display: flex;
   color: #111111;
   justify-content: center;
+
+  &:hover {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
 }
 
 .footer__social-autor {

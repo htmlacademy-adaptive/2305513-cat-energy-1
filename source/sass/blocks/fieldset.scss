@@ -33,11 +33,6 @@
   }
 }
 
-.fieldset__list--additionally {
-  margin-left: 20px;
-  gap: 11px;
-}
-
 .fieldset__list-contacts {
   display: flex;
   flex-direction: column;
@@ -140,7 +135,7 @@
   }
 }
 
-.fieldset__input:checked+.fieldset__title::before {
+.fieldset__input:checked + .fieldset__title::before {
   position: relative;
   content: "";
   margin-right: 15px;
