@@ -19,15 +19,18 @@
   font-weight: 400;
   line-height: 36px;
   border-bottom: solid 1px #ebebeb;
-  margin: 0;
+  margin: 0 0 0 -20px;
   padding: 27px 0 41px 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     justify-content: start;
-    margin-bottom: 84px;
+    margin: 35px 0 43px 29px;
     font-size: 60px;
     line-height: 60px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 47px 0 40px 0;
   }
 }

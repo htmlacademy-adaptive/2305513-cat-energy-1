@@ -1,7 +1,8 @@
 .main-header__wrapper {
   @include wrapper;
+
   position: relative;
-  padding: 13px 20px 15px 20px;
+  padding: 13px 20px 10px 20px;
   border-bottom: solid 1px #d9d9d9;
 
   @media (min-width: $tablet-width) {
@@ -14,10 +15,14 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 71px 0 0 0;
+    padding: 56px 0 0;
   }
 }
 
 .main-header__logo {
   width: 190px;
+}
+
+.main-header__images {
+  max-width: none;
 }

@@ -5,14 +5,25 @@
 
 .bonus__wrapper {
   @include wrapper;
+  margin: 37px auto;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    margin: 42px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     height: 288px;
+    margin: 27px 0 0 0;
+  }
+}
+
+.bonus__wrapper--catalog {
+  margin-bottom: 122px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
   }
 }
 
@@ -20,11 +31,16 @@
   position: relative;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+  }
 }
 
 .bonus__icon {
   position: absolute;
   margin: 58px 101px 0 121px;
+  fill: $basic-white;
 
   @media (min-width: $tablet-width) {
     margin: 57px 0 60px 77px;
@@ -47,9 +63,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 71px 125px 69px 421px;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
     margin: 185px 42px 43px 42px;
+    text-align: center;
   }
 }

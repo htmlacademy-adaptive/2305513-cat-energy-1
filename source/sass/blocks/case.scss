@@ -1,11 +1,12 @@
 .case {
   font-family: $font-Oswald;
   position: relative;
+  margin-bottom: 40px;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
     background: #eaeaea;
     width: 100%;
     height: 659px;
@@ -13,11 +14,16 @@
 
     @media (min-width: $tablet-width) {
       height: 462px;
+      bottom: 7px;
     }
 
     @media (min-width: $desktop-width) {
       background: #f2f2f2;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 40px 0 0 0;
   }
 }
 
@@ -26,31 +32,42 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    align-items: flex-start;
+    padding-left: 10px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     display: grid;
     grid-template-columns: 570px 1fr;
+    padding: 0;
+  }
+}
+
+.case__info {
+  padding-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
 .case__title {
   color: #000000;
-  text-align: center;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  margin: 0 0 40px 0;
+  margin: 23px 0 40px 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin: 63px 0 60px 0;
+    text-align: center;
     display: flex;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
+    margin: 0 0 146px 0;
   }
 }
 
@@ -61,16 +78,18 @@
   line-height: 18px;
   font-family: $font-Lato;
   margin: 0 0 20px 0;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
+    width: 715px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
-    width: 436px;
+    margin-bottom: 67px;
+    width: 432px;
   }
 }
 
@@ -78,7 +97,6 @@
   display: inline-flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 20px;
   width: 100%;
 
@@ -89,6 +107,7 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
+    margin: 0;
   }
 }
 
@@ -103,12 +122,16 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    height: 77px;
+    height: 70px;
   }
 }
 
 .case__module-border--margin {
   margin-right: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 43px;
+  }
 }
 
 .case__module-title {
@@ -117,10 +140,16 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .case__module-description {
   color: #444444;
+  font-family: $font-Lato;
   text-align: center;
   font-size: 12px;
   font-weight: 400;
@@ -144,8 +173,11 @@
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    bottom: -5px;
-    width: 110px;
+    bottom: -8px;
+    width: 140px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 5px;
   }
 }
 
@@ -157,10 +189,11 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-top: 34px;
-  justify-content: center;
-  flex-direction: column;
+  margin: 15px 0 20px 47px;
+
+  & span {
+    margin-left: 5px;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -168,16 +201,20 @@
     font-size: 20px;
     display: flex;
     width: 174px;
-    margin: 0;
-    margin-left: auto;
+    margin: 0 30px 0 auto;
     text-align: end;
+    flex-direction: column;
+
+    & span {
+      margin-top: 7px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     position: static;
-    width: 300px;
-    margin: 55px 0 0 0;
+    width: 326px;
+    margin: 59px 0 0 0;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -194,10 +231,16 @@
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
+    margin-top: 147px;
+    position: relative;
+    top: -108px;
+    left: -5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 85px;
+    margin: 0 0 85px 88px;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -234,6 +277,14 @@
   &:hover {
     background-color: $basic-green;
   }
+
+  &:hover svg {
+    fill: $basic-green;
+  }
+
+  &:hover .case__slider-button {
+    outline-color: $basic-green;
+  }
 }
 
 .case__slider-button {
@@ -244,21 +295,26 @@
   width: 40px;
   height: 40px;
   left: -18px;
-  bottom: 50%;
+  bottom: 43%;
   border: none;
+  outline: 2px solid #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &:hover {
-    background-color: $basic-green;
+  @media (min-width: $tablet-width) {
+    bottom: 46%;
   }
 }
 
-.case__slider-button svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #666666;
+.case__slider-button:hover {
+  outline-color: $basic-green;
+}
 
-  &:hover {
-    color: $basic-green;
-  }
+.case__slider-button svg {
+  fill: #666666;
+}
+
+.case__slider-button:hover svg {
+  fill: $basic-green;
 }

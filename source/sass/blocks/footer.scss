@@ -6,35 +6,28 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 1440px;
   }
 }
 
 .footer__social {
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
+  padding: 0 20px 40px;
+  margin-top: 37px;
   gap: 20px;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 55px 30px;
+    padding: 40px 30px 40px 30px;
     align-items: center;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 110px;
-  }
-}
-
-.footer__social-logo svg {
-  &:hover {
-    color: #3e3e3e;
-  }
-
-  &:active {
-    color: #6b6b6b;
+    padding: 38px 110px;
   }
 }
 
@@ -43,14 +36,30 @@
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding: 0;
+  margin: 0;
+  padding: 23px 0 12px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 41px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 17px 0 11px 39px;
+  }
 }
 
-.footer__social-item svg {
-  color: #666666;
+.footer__social-item {
+  display: flex;
+}
+
+.footer__social-item-link {
+  fill: #666666;
 
   &:hover {
-    color: $basic-green;
+    fill: $basic-green;
   }
 
   &:active {
@@ -62,6 +71,14 @@
   display: flex;
   color: #111111;
   justify-content: center;
+
+  &:hover {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
 }
 
 .footer__social-autor {
@@ -69,14 +86,14 @@
   text-decoration: none;
   align-items: center;
   justify-content: space-between;
-  color: #666666;
+  fill: #666666;
 
   @media (min-width: $tablet-width) {
     gap: 23px;
   }
 
   &:hover {
-    color: $basic-green;
+    fill: $basic-green;
   }
 
   &:active {
