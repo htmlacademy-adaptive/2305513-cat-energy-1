@@ -67,6 +67,24 @@
   .main-nav--closed .main-nav__list {
     display: none;
   }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+    position: relative;
+  }
+
+  .main-nav--nojs .main-nav__list-item {
+    display: block;
+    text-align: center;
+  }
 }
 
 .main-nav__wrapper {
@@ -97,7 +115,7 @@
     width: 322px;
     position: absolute;
     left: -21px;
-    top: 14px;
+    top: 10px;
   }
 
   @media (min-width: $desktop-width) {
