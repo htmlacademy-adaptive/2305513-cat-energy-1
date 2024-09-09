@@ -3,7 +3,6 @@
 
   position: relative;
   padding: 13px 20px 10px 20px;
-  border-bottom: solid 1px #d9d9d9;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -25,4 +24,12 @@
 
 .main-header__images {
   max-width: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

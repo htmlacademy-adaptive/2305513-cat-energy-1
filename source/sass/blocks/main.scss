@@ -4,21 +4,20 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%;
+    left: 50%;
     height: 696px;
     background-image: url("../img/background-desktop.png");
     background-repeat: no-repeat;
     z-index: -2;
   }
-}
 
-@media (min-width: $desktop-width) {
   .main::after {
     content: "";
     position: absolute;
     right: 0;
+    left: 50%;
     top: 0;
-    width: 50%;
+    max-width: 1041px;
     height: 696px;
     background-color: rgba(104, 183, 56, 0.85);
     z-index: -2;

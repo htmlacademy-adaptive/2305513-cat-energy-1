@@ -35,6 +35,14 @@
   border: none;
   outline: 1px solid #e7e7e7;
 
+  &:hover {
+    outline-color: $special-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-grey;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
