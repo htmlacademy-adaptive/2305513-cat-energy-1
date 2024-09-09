@@ -23,6 +23,14 @@
     line-height: normal;
   }
 
+  &:hover::before {
+    outline-color: #bababa;
+  }
+
+  &:focus::before {
+    outline-color: #bababa;
+  }
+
   &::before {
     content: "";
     width: 30px;
@@ -33,10 +41,6 @@
     margin-right: 15px;
     outline: solid 1px #cdcdcd;
     -moz-outline-radius: 50%;
-
-    &:focus {
-      color: #bababa;
-    }
 
     @media (min-width: $tablet-width) {
       width: 40px;

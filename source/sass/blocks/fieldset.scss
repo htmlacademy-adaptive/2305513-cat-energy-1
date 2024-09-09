@@ -129,6 +129,10 @@
     }
   }
 
+  &:hover::before {
+    outline-color: #bababa;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
