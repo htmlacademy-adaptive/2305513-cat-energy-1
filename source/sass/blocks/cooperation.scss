@@ -86,6 +86,10 @@
 
 .cooperation__map {
   position: relative;
+
+  & iframe {
+    width: 100%;
+  }
 }
 
 .cooperation__map--no-js {

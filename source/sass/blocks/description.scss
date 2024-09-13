@@ -73,7 +73,7 @@
   line-height: 18px;
 
   &::after {
-    content: "";
+    content: counter(description) "";
     text-align: center;
     font-family: $font-Oswald;
     font-size: 280px;
