@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>HTML Academy: Кэт энерджи</title>
 
-  <link rel="preload" href="./sass/fonts.scss">
+  <link rel="preload" href="/source/fonts/Lato-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/source/fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/source/fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/source/fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/source/fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/source/fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicons/apple.png"> <!-- 152×152 -->
@@ -33,13 +38,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list main-nav__list--background">
             <li class="main-nav__list-item">
-              <a class="main-nav__link--index main-nav__link-current--index ">Главная</a>
+              <a class="main-nav__link main-nav__link--index main-nav__link--index-current ">Главная</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link--index " href="./catalog.html">Каталог продукции</a>
+              <a class="main-nav__link main-nav__link--index " href="./catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link--index " href="./form.html">Подбор программы</a>
+              <a class="main-nav__link main-nav__link--index " href="./form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -169,12 +174,12 @@
 
         </div>
         <div class="case__images">
-          <picture class="case__img case__imag--left">
+          <picture class="case__img case__img--left">
             <source srcset="./img/big-cat-tablet1x.png, ./img/big-cat-tablet2x.png 2x" media="(min-width: 768px)">
             <img src="./img/big-cat-mobile1x.png" srcset="./img/big-cat-mobile2x.png 2x"
               alt="слева толстый упитанный кот">
           </picture>
-          <picture class="case__img case__imag--right">
+          <picture class="case__img case__img--right">
             <source srcset="./img/little-cat-tablet1x.png, ./img/little-cat-tablet2x.png 2x" media="(min-width: 768px)">
             <img src="./img/little-cat-mobile1x.png" srcset="./img/little-cat-mobile2x.png" alt="справа худой кот">
           </picture>
@@ -237,7 +242,7 @@
         </ul>
         <a class="footer__social-autor" href="htmlacademy.ru">
           <span class="footer__autor-htmlacademy">HTML Academy</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="academy__logo" width="27" height="34">
+          <svg xmlns="http://www.w3.org/2000/svg" class="academy-logo" width="27" height="34">
             <use href="img/sprite.svg#academy-logo"></use>
           </svg>
         </a>
