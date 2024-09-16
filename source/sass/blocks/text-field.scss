@@ -54,30 +54,8 @@
   }
 }
 
-.text-field__text-icon-mail {
-  width: 0;
-
-  &::before {
-    position: relative;
-    content: "";
-    display: flex;
-    right: 33px;
-    background-image: url("../img/email.svg");
-    width: 20px;
-    height: 20px;
-  }
-}
-
-.text-field__text-icon-tel {
-  width: 0;
-
-  &::before {
-    position: relative;
-    content: "";
-    display: flex;
-    right: 33px;
-    background-image: url("../img/phone.svg");
-    width: 20px;
-    height: 20px;
-  }
+.text-field svg {
+  fill: $basic-white;
+  position: absolute;
+  right: 20px;
 }

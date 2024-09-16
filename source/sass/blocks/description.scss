@@ -112,7 +112,7 @@
   }
 }
 
-.description__item img {
+.description__item svg {
   width: 60px;
   height: 60px;
   max-width: none;
@@ -121,10 +121,6 @@
     width: 80px;
     height: 80px;
     margin-top: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 0;
   }
 }
 

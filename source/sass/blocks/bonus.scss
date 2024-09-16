@@ -20,7 +20,9 @@
 }
 
 .bonus__wrapper--catalog {
-  margin-bottom: 122px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 122px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 85px;

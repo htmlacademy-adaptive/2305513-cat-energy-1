@@ -72,6 +72,8 @@
 }
 
 .fieldset__list--half-width {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     display: flex;
     width: 570px;
@@ -112,6 +114,7 @@
   line-height: 18px;
   text-transform: uppercase;
   align-items: center;
+  color: $special-dark-grey;
 
   &::before {
     content: "";
