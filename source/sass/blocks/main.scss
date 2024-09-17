@@ -8,6 +8,7 @@
     height: 696px;
     background-image: url("../img/background-desktop.png");
     background-repeat: no-repeat;
+    background-size: cover;
     z-index: -2;
   }
 
@@ -17,7 +18,6 @@
     right: 0;
     left: 50%;
     top: 0;
-    max-width: 1041px;
     height: 696px;
     background-color: rgba(104, 183, 56, 0.85);
     z-index: -2;

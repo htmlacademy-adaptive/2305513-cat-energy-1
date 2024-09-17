@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>HTML Academy: Кэт энерджи</title>
 
-  <link rel="preload" href="/source/fonts/Lato-Regular.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="/source/fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/source/fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="/source/fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/source/fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="/source/fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Lato-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicons/apple.png"> <!-- 152×152 -->
@@ -114,18 +114,13 @@
                 <label for="mail-owner" class="text-field__title">E-mail:*</label>
                 <input class="text-field__text" id="mail-owner" type="email" name="mail-owner"
                   placeholder="kuklachev@gmail.com" required>
-                <svg width="20" height="20" alt="">
-                  <use href="img/sprite.svg#email"></use>
-                </svg>
+                <span class="text-field__icon"></span>
               </li>
               <li class="text-field fieldset__list--half-width">
                 <label for="tel-owner" class="text-field__title">Телефон:*</label>
                 <input class="text-field__text" id="tel-owner" type="tel" name="tel-owner"
                   placeholder="8 (960) 900-60-90" required>
-                <svg width="20" height="20" alt="">
-                  <use href="img/sprite.svg#phone"></use>
-                </svg>
-
+                <span class="text-field__icon--phone"></span>
               </li>
             </ul>
           </div>
