@@ -46,6 +46,10 @@
     background-color: $basic-green;
 
     @media (min-width: $tablet-width) {
+      top: 91px;
+    }
+
+    @media (min-width: $desktop-width) {
       top: 97px;
     }
   }
@@ -97,7 +101,7 @@
     width: 708px;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 25px 40px 12px 40px;
+    padding: 23px 39px 12px;
     border: 1px solid $special-grey;
   }
 
@@ -142,7 +146,7 @@
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 216px;
+    width: 236px;
   }
 
   @media (min-width: $desktop-width) {

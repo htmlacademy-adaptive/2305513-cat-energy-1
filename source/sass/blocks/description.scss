@@ -112,15 +112,31 @@
   }
 }
 
-.description__item svg {
+.description__item-bg {
+  display: flex;
   width: 60px;
   height: 60px;
   max-width: none;
+  background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
     margin-top: 40px;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../img/group-icon1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 

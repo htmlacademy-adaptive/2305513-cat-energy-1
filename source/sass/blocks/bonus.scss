@@ -4,11 +4,12 @@
 }
 
 .bonus__wrapper {
-  @include wrapper;
+  display: flex;
+  flex-direction: column;
   margin: 37px auto;
+  background-color: #68b738;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     margin: 42px 0 0 0;
   }
 
@@ -21,7 +22,7 @@
 
 .bonus__wrapper--catalog {
   @media (min-width: $tablet-width) {
-    margin-bottom: 122px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +34,8 @@
   position: relative;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
     justify-content: start;
@@ -41,7 +44,7 @@
 
 .bonus__icon {
   position: absolute;
-  margin: 58px 101px 0 121px;
+  margin: 58px 100px 0 100px;
   fill: $basic-white;
 
   @media (min-width: $tablet-width) {
@@ -61,7 +64,7 @@
   line-height: 20px;
   width: 161px;
   position: absolute;
-  margin: 186px 61px 43px 78px;
+  margin: 186px 61px 43px 58px;
 
   @media (min-width: $tablet-width) {
     margin: 71px 125px 69px 421px;

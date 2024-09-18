@@ -43,6 +43,10 @@
     outline: 2px solid $special-dark-grey;
   }
 
+  &:focus:invalid {
+    outline-color: $status_error;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
@@ -55,19 +59,25 @@
 }
 
 .text-field__icon {
-  mask-image: url("../img/email.svg");
   position: absolute;
   right: 12px;
   width: 20px;
   height: 20px;
-  background-color: black;
+  background-color: #222222;
+}
+
+.text-field__icon--email {
+  mask-image: url("../img/email.svg");
 }
 
 .text-field__icon--phone {
   mask-image: url("../img/phone.svg");
-  position: absolute;
-  right: 12px;
-  width: 20px;
-  height: 20px;
-  background-color: black;
+}
+
+.text-field input:focus + .text-field__icon {
+  background-color: $basic-green;
+}
+
+.text-field input:focus:invalid + .text-field__icon {
+  background-color: $status_error;
 }

@@ -1,3 +1,7 @@
+.cooperation--background {
+  background-color: #f2f2f2;
+}
+
 .cooperation__wrapper {
   @include wrapper;
 
@@ -21,7 +25,7 @@
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 0 60px 0;
+    padding: 58px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,6 +93,7 @@
 
   & iframe {
     width: 100%;
+    height: 100%;
   }
 }
 
