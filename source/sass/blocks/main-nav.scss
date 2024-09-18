@@ -37,6 +37,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
+
   &::before,
   &::after {
     content: "";
@@ -118,21 +119,21 @@
     top: 8px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: inline-flex;
     align-items: center;
     gap: 34px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-flex;
+    align-items: center;
+    gap: 35px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__list {
-    display: inline-flex;
-    align-items: center;
-    gap: 35px;
-    flex-direction: row;
-  }
-
   .main-nav__toggle {
     display: none;
   }
