@@ -10,8 +10,9 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 1220px;
+    width: 1440px;
     align-items: center;
+    padding: 0 110px;
   }
 }
 
@@ -50,7 +51,7 @@
   @media (min-width: $desktop-width) {
     gap: 82px;
     flex-direction: row;
-    padding: 0 158px 0 55px;
+    padding: 0 0 0 28px;
   }
 }
 
@@ -67,7 +68,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 1195px;
-    margin: 0 0 0 56px;
     column-gap: 104px;
   }
 }
