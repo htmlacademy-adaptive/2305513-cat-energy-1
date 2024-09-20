@@ -43,6 +43,10 @@
     outline: 2px solid $special-dark-grey;
   }
 
+  &:focus:invalid {
+    outline-color: $status_error;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
@@ -54,30 +58,26 @@
   }
 }
 
-.text-field__text-icon-mail {
-  width: 0;
-
-  &::before {
-    position: relative;
-    content: "";
-    display: flex;
-    right: 33px;
-    background-image: url("../img/email.svg");
-    width: 20px;
-    height: 20px;
-  }
+.text-field__icon {
+  position: absolute;
+  right: 14px;
+  width: 20px;
+  height: 20px;
+  background-color: #222222;
 }
 
-.text-field__text-icon-tel {
-  width: 0;
+.text-field__icon--email {
+  mask-image: url("../img/email.svg");
+}
 
-  &::before {
-    position: relative;
-    content: "";
-    display: flex;
-    right: 33px;
-    background-image: url("../img/phone.svg");
-    width: 20px;
-    height: 20px;
-  }
+.text-field__icon--phone {
+  mask-image: url("../img/phone.svg");
+}
+
+.text-field input:focus + .text-field__icon {
+  background-color: $basic-green;
+}
+
+.text-field input:focus:invalid + .text-field__icon {
+  background-color: $status_error;
 }

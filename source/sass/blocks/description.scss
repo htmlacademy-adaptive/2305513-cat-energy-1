@@ -73,7 +73,7 @@
   line-height: 18px;
 
   &::after {
-    content: "";
+    content: counter(description) "";
     text-align: center;
     font-family: $font-Oswald;
     font-size: 280px;
@@ -99,7 +99,7 @@
   @media (max-width: $mobile-width-only) {
     display: flex;
     flex-direction: row;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     gap: 20px;
   }
 
@@ -112,19 +112,81 @@
   }
 }
 
-.description__item img {
+.description__item-bg {
+  display: flex;
   width: 60px;
   height: 60px;
   max-width: none;
+  background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
     margin-top: 40px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    padding-bottom: 0;
+.description__item-bg--first {
+  &::before {
+    content: "";
+    background-image: url("../img/group-icon1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.description__item-bg--second {
+  &::before {
+    content: "";
+    background-image: url("../img/group-icon2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.description__item-bg--third {
+  &::before {
+    content: "";
+    background-image: url("../img/group-icon3.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.description__item-bg--fourth {
+  &::before {
+    content: "";
+    background-image: url("../img/group-icon4.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 

@@ -24,7 +24,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 40px 30px 40px 30px;
+    padding: 47px 30px;
     align-items: center;
     margin: 0;
   }
@@ -37,6 +37,7 @@
 .footer__social-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
   margin: 0;

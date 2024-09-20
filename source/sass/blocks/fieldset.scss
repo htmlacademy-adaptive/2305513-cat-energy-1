@@ -10,8 +10,9 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 1220px;
+    width: 1440px;
     align-items: center;
+    padding: 0 110px;
   }
 }
 
@@ -20,12 +21,13 @@
   flex-direction: column;
   list-style: none;
   margin: 0;
-  padding: 0;
-  gap: 14px;
+  padding: 0 20px;
+  gap: 13px;
 
   @media (min-width: $tablet-width) {
     gap: 22px;
     width: 625px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,14 +44,14 @@
   gap: 14px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 95px 0 46px;
+    padding: 0 112px 0 30px;
     gap: 22px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 82px;
     flex-direction: row;
-    padding: 0 158px 0 55px;
+    padding: 0 0 0 44px;
   }
 }
 
@@ -57,7 +59,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 45px 0 44px;
+    margin: 0 45px 0 28px;
     row-gap: 32px;
     column-gap: 68px;
   }
@@ -66,12 +68,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 1195px;
-    margin: 0 0 0 56px;
     column-gap: 104px;
+    margin: 0 45px 0 45px;
   }
 }
 
 .fieldset__list--half-width {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     display: flex;
     width: 570px;
@@ -82,7 +86,7 @@
   display: flex;
   list-style: none;
   margin: 22px 0 0 0;
-  padding: 0;
+  padding: 0 20px;
   gap: 13px;
   flex-direction: column;
 
@@ -112,6 +116,7 @@
   line-height: 18px;
   text-transform: uppercase;
   align-items: center;
+  color: $special-dark-grey;
 
   &::before {
     content: "";
@@ -120,12 +125,13 @@
     height: 30px;
     background-color: #ffffff;
     position: relative;
-    margin-right: 20px;
+    margin-right: 14px;
     outline: solid 1px #cdcdcd;
 
     @media (min-width: $tablet-width) {
       width: 40px;
       height: 40px;
+      margin-right: 21px;
     }
   }
 

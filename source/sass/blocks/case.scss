@@ -23,8 +23,14 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    border-top: solid 1px #ebebeb;
+    margin: 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 40px 0 0 0;
+    border: none;
   }
 }
 
@@ -256,11 +262,11 @@
   max-width: none;
 }
 
-.case__imag--left {
+.case__img--left {
   left: 0;
 }
 
-.case__imag--right {
+.case__img--right {
   display: flex;
   right: 0;
   justify-content: flex-end;
