@@ -7,8 +7,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    padding: 0;
+    width: 1440px;
+    padding: 0 70px;
   }
 }
 
@@ -19,6 +19,7 @@
 .additional__products-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
+    padding: 0 40px;
   }
 }
 
@@ -50,7 +51,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 97px;
+      top: 23px;
     }
   }
 
@@ -63,7 +64,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
-    margin: 74px -40px 54px;
+    margin: 0 0 54px;
   }
 }
 
