@@ -66,11 +66,11 @@
   margin: 23px 0 40px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 63px 0 60px 0;
     text-align: center;
     display: flex;
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 57px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -299,9 +299,9 @@
   content: "";
   cursor: pointer;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  left: -18px;
+  width: 36px;
+  height: 36px;
+  left: -16px;
   bottom: 43%;
   border: none;
   outline: 2px solid #666666;

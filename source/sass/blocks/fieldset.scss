@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 0;
+    padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,7 +45,7 @@
   gap: 14px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 112px 0 30px;
+    padding: 0 35px;
     gap: 22px;
   }
 
@@ -61,9 +61,9 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 45px 0 28px;
+    margin: 0 35px;
     row-gap: 32px;
-    column-gap: 68px;
+    column-gap: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -93,7 +93,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    margin: 22px 50px 0 0;
+    margin: 22px 0 0 0;
     padding: 22px 0 27px 27px;
     outline: 1px solid #e7e7e7;
   }

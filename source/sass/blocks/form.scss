@@ -87,7 +87,7 @@
   @media (min-width: $tablet-width) {
     border: 0;
     margin: 0 0 52px;
-    padding: 0 35px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,7 +104,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 0 41px;
+    padding: 0 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -154,12 +154,13 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    width: 610px;
-    margin: 13px 0 77px 0;
+    width: 586px;
+    margin: 13px 0 77px;
     padding: 0 0 0 34px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 610px;
     margin: 0 0 77px;
     padding: 0 44px;
   }
@@ -176,7 +177,7 @@
     content: "";
     position: absolute;
     z-index: -1;
-    top: 17px;
+    top: 19px;
     left: 0;
     height: 2px;
     width: 100%;
@@ -196,9 +197,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
-    margin: 14px 0 88px 6px;
+    margin: 14px 0 88px 0;
     width: 261px;
-    padding: 0 0 0 24px;
+    padding: 0 0 0 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -218,13 +219,13 @@
     content: "";
     position: absolute;
     z-index: -1;
-    top: 17px;
+    top: 18px;
     left: 0;
     height: 2px;
     width: 100%;
     background-color: $basic-green;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       top: 22px;
     }
   }
@@ -234,9 +235,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
-    margin: -5px 0 57px 6px;
+    margin: 0 0 57px 0;
     width: 290px;
-    padding: 0 0 0 24px;
+    padding: 0 0 0 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -263,7 +264,7 @@
     height: 175px;
     font-size: 20px;
     line-height: 30px;
-    margin: 0 0 17px 34px;
+    margin: 0 0 12px 40px;
     padding: 10px 16px;
     width: 620px;
   }
@@ -286,11 +287,11 @@
   margin: 0 0 32px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 60px;
+    margin: 0 0 62px;
     width: 768px;
     flex-direction: row;
     justify-content: flex-start;
-    padding-left: 38px;
+    padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
