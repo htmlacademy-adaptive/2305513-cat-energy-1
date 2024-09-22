@@ -78,7 +78,7 @@
   }
 }
 
-.fieldset-list__input:checked+.fieldset-list__title::before {
+.fieldset-list__input:checked + .fieldset-list__title::before {
   position: relative;
   content: "";
   margin-right: 15px;
