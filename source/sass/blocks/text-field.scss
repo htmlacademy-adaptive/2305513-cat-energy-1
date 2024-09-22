@@ -66,6 +66,15 @@
   background-color: #222222;
 }
 
+.text-field--half-width {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 570px;
+  }
+}
+
 .text-field__icon--email {
   mask-image: url("../img/email.svg");
 }
