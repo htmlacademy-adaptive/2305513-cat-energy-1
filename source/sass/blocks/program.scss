@@ -10,9 +10,11 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    width: 1220px;
+    width: 1440px;
+    padding: 0 110px;
     gap: 80px;
     margin-top: 266px;
+    margin-bottom: 74px;
   }
 }
 
@@ -150,6 +152,8 @@
   @media (min-width: $desktop-width) {
     width: 455px;
     margin-top: 18px;
+    padding: 0;
+    margin-bottom: 20px;
   }
 }
 
