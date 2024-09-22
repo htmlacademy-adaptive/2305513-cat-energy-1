@@ -70,7 +70,7 @@
   }
 }
 
-.fieldset__input:checked+.fieldset__title::before {
+.fieldset__input:checked + .fieldset__title::before {
   position: relative;
   content: "";
   margin-right: 15px;
