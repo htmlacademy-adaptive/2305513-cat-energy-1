@@ -77,15 +77,14 @@
 .form__fieldset {
   display: flex;
   margin: 0 auto;
-  padding: 0 0 20px 0;
+  padding: 0 0 21px 0;
   border: none;
-  width: 100%;
+  width: 320px;
   flex-direction: column;
-  border-bottom: solid 1px #d9d9d9;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    border: 0;
+    width: 100%;
     margin: 0 0 52px;
     padding: 0;
   }
@@ -93,6 +92,13 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0 0 44px;
+  }
+}
+
+.form__fieldset--border {
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
   }
 }
 
@@ -288,7 +294,7 @@
 }
 
 .form__fieldset-title--additionally {
-  margin: 3px 0 35px;
+  margin: 3px 0 31px;
   font-size: 24px;
   line-height: 26px;
   width: 181px;
@@ -393,7 +399,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  margin: 10px 0 21px;
+  margin: 11px 0 22px;
 
   &:hover {
     background-color: #5eaa2f;
