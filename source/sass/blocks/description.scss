@@ -1,6 +1,7 @@
 .description__wrapper {
   @include wrapper;
   padding-left: 20px;
+  border-bottom: solid 1px #ebebeb;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -8,6 +9,7 @@
     width: 768px;
     margin: 0 auto 46px;
     padding: 0 0 17px 30px;
+    border-bottom: solid 1px #ebebeb;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +18,7 @@
     width: 1220px;
     margin: 0 auto;
     padding: 0;
+    border: none;
   }
 }
 

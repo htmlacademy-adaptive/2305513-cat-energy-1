@@ -24,13 +24,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    border-top: solid 1px #ebebeb;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin: 40px 0 0 0;
-    border: none;
   }
 }
 
